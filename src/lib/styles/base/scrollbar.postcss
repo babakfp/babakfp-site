@@ -1,0 +1,14 @@
+@layer base
+{
+	.scrollbar { overflow: auto; overflow: overlay; }
+	.scrollbar-x { overflow-x: auto; overflow-x: overlay; }
+	.scrollbar-y { overflow-y: auto; overflow-y: overlay; }
+
+	::-webkit-scrollbar { @apply w-1.5 h-1.5;
+		&-thumb { @apply h-12 max-h-[40%] w-12 max-w-[40%] bg-gray-600 rounded-full bg-clip-padding border-2 border-solid border-transparent }
+	}
+
+	body::-webkit-scrollbar { @apply w-2 h-2;
+		&-thumb { @apply border-3 }
+	}
+}
