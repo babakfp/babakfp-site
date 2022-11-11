@@ -17,7 +17,7 @@
 >
 	<h3 class="text-white text-lg font-semibold font-code sm:hidden">{title}</h3>
 	
-	<div class="flex items-start gap-4 mt-4 sm:mt-0">
+	<div class="flex items-start gap-4 mt-2 sm:mt-0">
 		<img class="w-20 min-w-20 aspect-square" src={thumb} alt={title} />
 		<div>
 			<h3 class="text-white text-lg font-semibold font-code hidden sm:block">{title}</h3>
