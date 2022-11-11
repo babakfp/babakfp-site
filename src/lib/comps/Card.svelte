@@ -1,6 +1,6 @@
 <script>
 	export let href
-	export let isExternal
+	export let isExternal = false
 	export let className = null
 	export { className as class }
 	export let arrowCenterRight = false

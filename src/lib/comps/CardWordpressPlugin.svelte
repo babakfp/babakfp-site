@@ -25,14 +25,14 @@
 		</div>
 	</div>
 
-	<ul class="flex items-center gap-4 mt-4">
-		<li class="flex gap-1 text-gray-400 text-xs font-code">
+	<ul class="flex items-center gap-4 mt-4 text-gray-400 text-xs font-code">
+		<li>
 			Active Installs: {activeInstalls}
 		</li>
 		{#if rating}
-			<li class="flex gap-2">
+			<li class="flex gap-3">
+				<span>{reviewsCount} Reviews</span>
 				<StarRating />
-				<span class="text-gray-400 text-xs font-code">{reviewsCount} Reviews</span>
 			</li>
 		{/if}
 	</ul>
