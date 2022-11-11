@@ -27,7 +27,7 @@
 
 	<ul class="flex items-center gap-6 mt-4 text-gray-400 text-xs font-code">
 		<li>
-			Active Installs: {activeInstalls}
+			Installs: {activeInstalls}
 		</li>
 		{#if rating}
 			<li class="flex gap-2">
