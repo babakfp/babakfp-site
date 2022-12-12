@@ -18,7 +18,7 @@
 <nav class="z-40 | fixed inset-0 top-header-height | bg-gray-900/50 backdrop-blur-lg | duration-150
 	hide {$isMainMenuOpen && 'show'} xl:hidden
 ">
-	<OutClick on:outclick={()=> $isMainMenuOpen = false} excludeByQuerySelector={['#MobileMenuToggle']}>
+	<OutClick on:outclick={()=> $isMainMenuOpen = false} excludeQuerySelectorAll="#MobileMenuToggle">
 		<div class="w-full py-6 | bg-gray-800/95 | overflow-y-auto
 			duration-300 ease-in-out | -translate-y-full {$isMainMenuOpen && 'translate-y-0'}
 		">
