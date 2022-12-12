@@ -10,11 +10,11 @@
 	on:click
 	aria-label="{isOpen ? 'Open' : 'Close'} {ariaLabel}"
 >
-	<div class="duration-150 {isOpen && 'scale-0'}">
+	<div class="flex duration-150 {isOpen && 'scale-0'}">
 		<slot name="icon-open" />
 	</div>
 	
-	<div class="absolute duration-150 scale-0 {isOpen && 'scale-100'}">
+	<div class="flex absolute duration-150 scale-0 {isOpen && 'scale-100'}">
 		<slot name="icon-close" />
 	</div>
 </button>
