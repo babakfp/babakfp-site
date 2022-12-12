@@ -29,7 +29,7 @@
 							<div class="flex items-center justify-center | w-7.5 h-7.5 | bg-white/5 rounded | text-gray-400 | duration-150 [ group-hover:bg-white/10 group-hover:text-white ]">
 								{@html item.svg}
 							</div>
-							<span class="uppercase font-code | duration-150 group-hover:text-white">{item.title}</span>
+							<span class="uppercase font-mono | duration-150 group-hover:text-white">{item.title}</span>
 						</a>
 					</li>
 				{/each}

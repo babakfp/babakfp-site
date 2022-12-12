@@ -1,35 +1,35 @@
 /* Inter */
 
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-weight: 100 900;
-  font-display: block;
+  font-display: swap;
   font-style: normal;
-  src: url('/fonts/Inter/Inter-roman-latin.var.woff2') format('woff2');
+  src: url("/fonts/Inter/Inter-roman-latin.var.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-weight: 100 900;
-  font-display: block;
+  font-display: swap;
   font-style: italic;
-  src: url('/fonts/Inter/Inter-italic-latin.var.woff2') format('woff2');
+  src: url("/fonts/Inter/Inter-italic-latin.var.woff2") format("woff2");
 }
 
 /* DankMono */
 
 @font-face {
-  font-family: 'DankMono';
+  font-family: "DankMono";
   font-weight: 400;
-  font-display: block;
+  font-display: swap;
   font-style: normal;
-  src: url('/fonts/DankMono/DankMono-Regular.woff2') format('woff2');
+  src: url("/fonts/DankMono/DankMono-Regular.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: 'DankMono';
+  font-family: "DankMono";
   font-weight: 400;
-  font-display: block;
+  font-display: swap;
   font-style: italic;
-  src: url('/fonts/DankMono/DankMono-RegularItalic.woff2') format('woff2');
+  src: url("/fonts/DankMono/DankMono-RegularItalic.woff2") format("woff2");
 }

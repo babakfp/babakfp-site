@@ -14,7 +14,7 @@
 
 	<div class="px-2 xl:max-h-96 xl:overflow-y-auto xl:pr-1">
 		<div class="table-wrapper | overflow-x-auto pb-1">
-			<table class="{className} w-full | text-left font-code whitespace-nowrap | border-collapse">
+			<table class="{className} w-full | text-left font-mono whitespace-nowrap | border-collapse">
 			
 				<thead class="text-sm | select-none">
 					<tr>

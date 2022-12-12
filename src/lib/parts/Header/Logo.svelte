@@ -18,7 +18,7 @@
 	}
 </script>
 
-<a class="flex items-center | h-full | font-code text-sm text-white font-black uppercase xl:px-4 xl:text-base" {href}>
+<a class="flex items-center | h-full | font-mono text-sm text-white font-black uppercase xl:px-4 xl:text-base" {href}>
 	<span class="p-1.5 px-2 bg-gray-800 highlight-white/5 rounded shadow xl:px-4">
 		{title}
 	</span>

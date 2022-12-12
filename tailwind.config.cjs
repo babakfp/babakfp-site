@@ -1,4 +1,5 @@
 const colors = require('tailwindcss/colors')
+const defaultTheme = require("tailwindcss/defaultTheme")
 const tailwindcssAddons = require('tailwindcss-addons')
 
 const flattenColorPalette = (colors) => {
@@ -45,8 +46,8 @@ const config = {
       full: '9999px',
 		},
 		fontFamily: {
-			base: [ '"Inter"' ],
-      code: [ '"DankMono"' ],
+			sans: [ '"Inter"', defaultTheme.fontFamily.sans ],
+      mono: [ '"DankMono"', defaultTheme.fontFamily.mono ],
 		},
 		fontWeight: {
       // thin: '100',
