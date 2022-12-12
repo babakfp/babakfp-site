@@ -19,7 +19,7 @@
 	hide {$isMainMenuOpen && 'show'} xl:hidden
 ">
 	<OutClick on:outclick={()=> $isMainMenuOpen = false} excludeQuerySelectorAll="#MobileMenuToggle">
-		<div class="w-full py-6 | bg-gray-800/95 | overflow-y-auto
+		<div class="w-full py-6 | bg-gray-800/95 border-b border-white/5 | overflow-y-auto
 			duration-300 ease-in-out | -translate-y-full {$isMainMenuOpen && 'translate-y-0'}
 		">
 			<ul>
