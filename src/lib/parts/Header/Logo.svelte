@@ -1,4 +1,5 @@
 <script>
+	import { fly } from "svelte/transition"
 	import { page } from '$app/stores'
 
 	let title = 'babakfp'
@@ -19,7 +20,10 @@
 </script>
 
 <a class="flex items-center | h-full | font-mono text-sm text-white font-black uppercase xl:px-4 xl:text-base" {href}>
-	<span class="p-1.5 px-2 bg-gray-800 highlight-white/5 rounded shadow xl:px-4">
-		{title}
-	</span>
+	<div class="relative overflow-hidden p-1.5 px-2 bg-gray-800 highlight-white/5 rounded shadow xl:px-4">
+		<div class="opacity-0 pointer-events-none">{title}</div>
+		{#key title}
+			<div class="absolute inset-center" in:fly={{ x: 32, duration: 500 }} out:fly={{ x: -32, duration: 500 }}>{title}</div>
+		{/key}
+	</div>
 </a>
