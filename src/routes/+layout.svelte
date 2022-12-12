@@ -19,7 +19,7 @@
 <Header />
 
 {#key $page.url.pathname}
-	<main class="relative | container | py-12 pb-20" in:fly={{ delay: 100, duration: 500, y: -32 }}>
+	<main class="relative | container | py-12 pb-20" in:fly={{ y: -32, duration: 1000 }}>
 		<slot />
 	</main>
 {/key}
