@@ -5,7 +5,6 @@
   font-weight: 100 900;
   font-display: block;
   font-style: normal;
-  font-named-instance: 'Regular';
   src: url('/fonts/Inter/Inter-roman-latin.var.woff2') format('woff2');
 }
 
@@ -14,7 +13,6 @@
   font-weight: 100 900;
   font-display: block;
   font-style: italic;
-  font-named-instance: 'Italic';
   src: url('/fonts/Inter/Inter-italic-latin.var.woff2') format('woff2');
 }
 
