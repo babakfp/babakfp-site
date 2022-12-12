@@ -21,12 +21,13 @@
 	hide {$isSideMenuOpen && 'show'}
 	xl:[all:unset] xl:!-mt-4 xl:!col-start-1 xl:!col-end-4
 ">
-	<OutClick on:outclick={()=> $isSideMenuOpen = false} excludeQuerySelectorAll="#SidebarToggle">
-		<div class="w-full max-w-xs h-full pb-12 | bg-gray-800/95 | border-t border-t-transparent border-r border-r-white/5 | overflow-y-auto
+	<OutClick tag="div" class="w-full max-w-xs h-full pb-12 | bg-gray-800/95 | border-t border-t-transparent border-r border-r-white/5 | overflow-y-auto
 			duration-300 ease-in-out | -translate-x-full {$isSideMenuOpen && 'translate-x-0'}
 			xl:[all:unset] xl:!sticky xl:!top-[calc(theme(spacing.header-height)+theme(spacing.8))]
-		">
-			<SidebarMenu />
-		</div>
+		"
+		on:outclick={()=> $isSideMenuOpen = false}
+		excludeQuerySelectorAll="#SidebarToggle"
+	>
+		<SidebarMenu />
 	</OutClick>
 </nav>
