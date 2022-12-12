@@ -20,10 +20,9 @@
 </script>
 
 <a class="flex items-center | h-full | font-mono text-sm text-white font-black uppercase xl:px-4 xl:text-base" {href}>
-	<div class="relative overflow-hidden p-1.5 px-2 bg-gray-800 highlight-white/5 rounded shadow xl:px-4">
-		<div class="opacity-0 pointer-events-none">{title}</div>
+	<div class="relative flex items-center justify-center w-24 h-9 overflow-hidden bg-gray-800 highlight-white/5 rounded shadow">
 		{#key title}
-			<div class="absolute inset-center" in:fly={{ x: 32, duration: 500 }} out:fly={{ x: -32, duration: 500 }}>{title}</div>
+			<div class="absolute" in:fly={{ x: 96, duration: 500 }} out:fly={{ x: -96, duration: 500 }}>{title}</div>
 		{/key}
 	</div>
 </a>
