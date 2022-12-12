@@ -30,17 +30,17 @@ Let's use a simple and clean syntax like the example below.
 {@if}
 {@else if}
 {@else}
-{@endif} // OR {@end}
+{@endif} // or {@end}
 
 {@each}
-{@endeach} // OR {@end}
+{@endeach} // or {@end}
 
 {@await}
 {@then} 
-{@endawait} // OR {@end}
+{@endawait} // or {@end}
 
 {@key}
-{@endkey} // OR {@end}
+{@endkey} // or {@end}
 
 {@html}
 {@const}
