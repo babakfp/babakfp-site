@@ -9,7 +9,7 @@
 	import FloatingBackToTopButton from '$comps/FloatingBackToTopButton.svelte'
 
 	// app main styles
-  import '$styles/app.postcss'
+	import '$styles/app.postcss'
 </script>
 
 <BackgroundBackdrop />
