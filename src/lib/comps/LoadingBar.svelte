@@ -1,8 +1,8 @@
 <script>
-	import { navigating } from '$app/stores'
+	import { navigating } from "$app/stores"
 	export let delay = 250
 	let delayedPreloading = false
-	$: setTimeout(()=> (delayedPreloading = $navigating), delay)
+	$: setTimeout(() => (delayedPreloading = $navigating), delay)
 </script>
 
 {#if delayedPreloading}
@@ -32,12 +32,10 @@
 		@apply bg-primary bg-opacity-80;
 	}
 	.loading-bar .loading-bar__train:before {
-		animation: loading-bar__train 2100ms cubic-bezier(0.65, 0.815, 0.735, 0.395)
-			infinite;
+		animation: loading-bar__train 2100ms cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
 	}
 	.loading-bar .loading-bar__train:after {
-		animation: loading-bar__train-short 2100ms
-			cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+		animation: loading-bar__train-short 2100ms cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
 		animation-delay: 1.15s;
 	}
 	@keyframes loading-bar__train {

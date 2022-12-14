@@ -1,12 +1,12 @@
 <script>
-	import { page } from '$app/stores'
-	import { docsMenuItems } from '$stores/sidebar.js'
-	import SidebarMenuItem from './SidebarMenuItem.svelte'
-	import SidebarMenuItemGithub from './SidebarMenuItemGithub.svelte'
+	import { page } from "$app/stores"
+	import { docsMenuItems } from "$stores/sidebar.js"
+	import SidebarMenuItem from "./SidebarMenuItem.svelte"
+	import SidebarMenuItemGithub from "./SidebarMenuItemGithub.svelte"
 </script>
 
 {#each $docsMenuItems as project}
-	{#if $page.url.pathname.startsWith(project.href) || $page.url.pathname === '/docs'}
+	{#if $page.url.pathname.startsWith(project.href) || $page.url.pathname === "/docs"}
 		<div class="mt-8">
 			<!-- TITLE -->
 			<div class="flex items-center justify-between | pb-2 px-4 | font-semibold text-lg xl:px-0">
@@ -38,7 +38,7 @@
 
 								<ul class="relative | mb-2">
 									<div class="absolute inset-y-0 left-4 | w-px bg-white/5 xl:left-0" />
-									
+
 									{#each item.subItems as subItem}
 										<li>
 											<SidebarMenuItem class="pl-8" href={subItem.href}>

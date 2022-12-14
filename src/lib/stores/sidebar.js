@@ -1,89 +1,89 @@
-import { readable } from 'svelte/store'
+import { readable } from "svelte/store"
 
 export const docsMenuItems = readable([
 	{
-		title: 'Svelte OutClick',
-		href: '/docs/svelte-outclick',
-		github: 'https://github.com/babakfp/svelte-outclick',
+		title: "Svelte OutClick",
+		href: "/docs/svelte-outclick",
+		github: "https://github.com/babakfp/svelte-outclick",
 		importantItems: [
 			{
-				title: 'CHANGELOG',
-				href: '/docs/svelte-outclick/changelog',
+				title: "CHANGELOG",
+				href: "/docs/svelte-outclick/changelog",
 			},
 		],
 		items: [
 			{
-				title: 'Introduction',
-				href: '/docs/svelte-outclick',
+				title: "Introduction",
+				href: "/docs/svelte-outclick",
 			},
 		],
 	},
 	{
-		title: 'TailwindCSS Addons',
-		href: '/docs/tailwindcss-addons',
-		github: 'https://github.com/babakfp/tailwindcss-addons',
+		title: "TailwindCSS Addons",
+		href: "/docs/tailwindcss-addons",
+		github: "https://github.com/babakfp/tailwindcss-addons",
 		importantItems: [
 			{
-				title: 'CHANGELOG',
-				href: '/docs/tailwindcss-addons/changelog',
+				title: "CHANGELOG",
+				href: "/docs/tailwindcss-addons/changelog",
 			},
 		],
 		items: [
 			{
-				title: 'Introduction',
-				href: '/docs/tailwindcss-addons',
+				title: "Introduction",
+				href: "/docs/tailwindcss-addons",
 			},
 			{
-				title: 'Presets',
-				href: '/docs/tailwindcss-addons/presets',
+				title: "Presets",
+				href: "/docs/tailwindcss-addons/presets",
 			},
 			{
-				title: 'Base',
-				href: '/docs/tailwindcss-addons/base',
+				title: "Base",
+				href: "/docs/tailwindcss-addons/base",
 			},
 			{
-				title: 'Utilities',
+				title: "Utilities",
 				subItems: [
 					{
-						title: 'Direction',
-						href: '/docs/tailwindcss-addons/direction',
+						title: "Direction",
+						href: "/docs/tailwindcss-addons/direction",
 					},
 					{
-						title: 'User Drag',
-						href: '/docs/tailwindcss-addons/user-drag',
+						title: "User Drag",
+						href: "/docs/tailwindcss-addons/user-drag",
 					},
 					{
-						title: 'Flip',
-						href: '/docs/tailwindcss-addons/flip',
+						title: "Flip",
+						href: "/docs/tailwindcss-addons/flip",
 					},
 					{
-						title: 'Hide & Show',
-						href: '/docs/tailwindcss-addons/hide',
+						title: "Hide & Show",
+						href: "/docs/tailwindcss-addons/hide",
 					},
 					{
-						title: 'Input Resets',
-						href: '/docs/tailwindcss-addons/input-resets',
+						title: "Input Resets",
+						href: "/docs/tailwindcss-addons/input-resets",
 					},
 					{
-						title: 'Inset Center',
-						href: '/docs/tailwindcss-addons/inset',
+						title: "Inset Center",
+						href: "/docs/tailwindcss-addons/inset",
 					},
 					{
-						title: 'Overflow Unset',
-						href: '/docs/tailwindcss-addons/overflow',
+						title: "Overflow Unset",
+						href: "/docs/tailwindcss-addons/overflow",
 					},
 					{
-						title: 'Short Placements',
-						href: '/docs/tailwindcss-addons/short-placements',
+						title: "Short Placements",
+						href: "/docs/tailwindcss-addons/short-placements",
 					},
 				],
 			},
 			{
-				title: 'Variants',
+				title: "Variants",
 				subItems: [
 					{
-						title: 'Not Variants',
-						href: '/docs/tailwindcss-addons/not-variants',
+						title: "Not Variants",
+						href: "/docs/tailwindcss-addons/not-variants",
 					},
 				],
 			},

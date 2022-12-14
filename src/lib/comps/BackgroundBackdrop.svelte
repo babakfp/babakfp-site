@@ -1,6 +1,6 @@
 <script>
-	import { onDestroy } from 'svelte'
-	import { getRandomNumber } from '$utils/getRandomNumber.js'
+	import { onDestroy } from "svelte"
+	import { getRandomNumber } from "$utils/getRandomNumber.js"
 	let backgroundImage
 
 	//TODO: Is typo currect?
@@ -19,8 +19,13 @@
 	// }
 </script>
 
-<div class="background-grid | fixed inset-0 | bg-bottom bg-gradient-to-b from-transparent to-gray-900" />
-<div bind:this={backgroundImage} class="background-image | fixed inset-0 | opacity-50 | bg-center duration-[2s]" />
+<div
+	class="background-grid | fixed inset-0 | bg-bottom bg-gradient-to-b from-transparent to-gray-900"
+/>
+<div
+	bind:this={backgroundImage}
+	class="background-image | fixed inset-0 | opacity-50 | bg-center duration-[2s]"
+/>
 
 <style lang="postcss">
 	.background-grid {
@@ -28,8 +33,8 @@
 	}
 	.background-image {
 		background-image: url("/img/background-image.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+		background-size: cover;
+		background-repeat: no-repeat;
 		/* animation-name: bg-position-move;
 		animation-duration: 60s;
 		animation-timing-function: linear;

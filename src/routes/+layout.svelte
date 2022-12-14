@@ -1,15 +1,15 @@
 <script>
-	import { page } from '$app/stores'
-	import { fly } from 'svelte/transition'
+	import { page } from "$app/stores"
+	import { fly } from "svelte/transition"
 
-	import LoadingBar from '$comps/LoadingBar.svelte'
+	import LoadingBar from "$comps/LoadingBar.svelte"
 
-	import Header from '$parts/Header/Header.svelte'
-	import BackgroundBackdrop from '$comps/BackgroundBackdrop.svelte'
-	import FloatingBackToTopButton from '$comps/FloatingBackToTopButton.svelte'
+	import Header from "$parts/Header/Header.svelte"
+	import BackgroundBackdrop from "$comps/BackgroundBackdrop.svelte"
+	import FloatingBackToTopButton from "$comps/FloatingBackToTopButton.svelte"
 
 	// app main styles
-	import '$styles/app.postcss'
+	import "$styles/app.postcss"
 </script>
 
 <BackgroundBackdrop />

@@ -1,11 +1,14 @@
-import adapter from '@sveltejs/adapter-vercel'
-import preprocess from 'svelte-preprocess'
-import { mdsvex, escapeSvelte } from 'mdsvex'
-import { getHighlighter } from 'shiki'
+import adapter from "@sveltejs/adapter-vercel"
+import preprocess from "svelte-preprocess"
+import { mdsvex, escapeSvelte } from "mdsvex"
+import { getHighlighter } from "shiki"
 
-const mdsvexHighlight = async (code, lang) => {
+async function mdsvexHighlight(code, lang) {
 	try {
-		const highlighter = await getHighlighter({ theme: 'rose-pine', langs: ['html', 'css', 'js', 'svelte', 'php', 'cmd'] })
+		const highlighter = await getHighlighter({
+			theme: "rose-pine",
+			langs: ["html", "css", "js", "svelte", "php", "cmd"],
+		})
 		const result = highlighter.codeToHtml(code, { lang })
 		return result
 	} catch (error) {
@@ -14,30 +17,28 @@ const mdsvexHighlight = async (code, lang) => {
 }
 
 /** @type {import('@sveltejs/kit').Config} */
-const config = {
-  kit: {
-    adapter: adapter(),
+export default {
+	kit: {
+		adapter: adapter(),
 		alias: {
-      $comps: 'src/lib/comps',
-      $parts: 'src/lib/parts',
-      $utils: 'src/lib/utils',
-      $stores: 'src/lib/stores',
-      $styles: 'src/lib/styles',
-    },
-  },
-  preprocess: [
+			$comps: "src/lib/comps",
+			$parts: "src/lib/parts",
+			$utils: "src/lib/utils",
+			$stores: "src/lib/stores",
+			$styles: "src/lib/styles",
+		},
+	},
+	preprocess: [
 		preprocess({ postcss: true }),
 		mdsvex({
-			extensions: ['.md'],
+			extensions: [".md"],
 			highlight: {
 				highlighter: async (code, lang) => {
 					const highlightedCode = await mdsvexHighlight(code, lang)
-					return highlightedCode ? escapeSvelte(highlightedCode) : ''
+					return highlightedCode ? escapeSvelte(highlightedCode) : ""
 				},
 			},
 		}),
-  ],
-	extensions: ['.svelte', '.md'],
+	],
+	extensions: [".svelte", ".md"],
 }
-
-export default config

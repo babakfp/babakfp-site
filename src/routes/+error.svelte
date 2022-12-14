@@ -1,5 +1,5 @@
 <script>
-	import { page } from '$app/stores'
+	import { page } from "$app/stores"
 </script>
 
 <div class="grid justify-center text-center">

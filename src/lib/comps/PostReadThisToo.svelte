@@ -15,7 +15,7 @@
 <hr />
 
 <style lang="postcss">
-  hr {
-    @apply !my-8;
-  }
+	hr {
+		@apply !my-8;
+	}
 </style>

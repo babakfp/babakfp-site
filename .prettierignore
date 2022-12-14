@@ -14,3 +14,10 @@ yarn.lock
 .pnpm-debug.log
 npm-debug.log
 yarn-error.log
+
+src/lib/content
+/src/lib/styles
+/static
+
+src/lib/comps/ClassTable.svelte
+src/lib/comps/ClassTableProperties.svelte

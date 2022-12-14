@@ -1,6 +1,6 @@
 <script>
-	import Sidebar from '$parts/Sidebar/Sidebar.svelte'
-  export let data
+	import Sidebar from "$parts/Sidebar/Sidebar.svelte"
+	export let data
 </script>
 
 <svelte:head>

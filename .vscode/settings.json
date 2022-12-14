@@ -1,5 +1,7 @@
 {
+	"editor.formatOnSave": true,
+
 	"search.exclude": {
-		"/static/*": true,
+		"/static/*": true
 	}
 }
