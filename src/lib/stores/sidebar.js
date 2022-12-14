@@ -2,7 +2,6 @@ import { readable } from "svelte/store"
 
 export const docsMenuItems = readable([
 	{
-		title: "Svelte OutClick",
 		href: "/docs/svelte-outclick",
 		github: "https://github.com/babakfp/svelte-outclick",
 		importantItems: [
@@ -29,7 +28,6 @@ export const docsMenuItems = readable([
 		],
 	},
 	{
-		title: "TailwindCSS Addons",
 		href: "/docs/tailwindcss-addons",
 		github: "https://github.com/babakfp/tailwindcss-addons",
 		importantItems: [

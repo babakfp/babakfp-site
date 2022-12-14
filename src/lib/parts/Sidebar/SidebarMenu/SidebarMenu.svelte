@@ -10,7 +10,6 @@
 		<div class="mt-8">
 			<!-- TITLE -->
 			<div class="flex items-center justify-between | pb-2 px-4 | font-semibold text-lg xl:px-0">
-				<span>{project.title}</span>
 				<SidebarMenuItemGithub href={project.github} />
 			</div>
 
