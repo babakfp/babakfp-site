@@ -114,8 +114,8 @@
 					href={repo.html_url}
 					title={repo.name}
 					description={repo.description}
-					lang={repo.language}
 					stars={repo.stargazers_count}
+					weeklyDownloads={repo.weeklyDownloads}
 				/>
 			</li>
 		{/each}
