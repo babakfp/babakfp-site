@@ -25,7 +25,9 @@
 	{#if lang}
 		<div class="mt-2 flex gap-4 text-gray-400 text-xs font-mono">
 			<span>{lang}</span>
-			<span>{stars} Stars</span>
+			{#if stars > 0}
+				<span>{stars} Stars</span>
+			{/if}
 		</div>
 	{/if}
 </Card>
