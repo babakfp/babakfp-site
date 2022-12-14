@@ -5,14 +5,16 @@ export const docsMenuItems = readable([
 		title: 'Svelte OutClick',
 		href: '/docs/svelte-outclick',
 		github: 'https://github.com/babakfp/svelte-outclick',
+		importantItems: [
+			{
+				title: 'CHANGELOG',
+				href: '/docs/svelte-outclick/changelog',
+			},
+		],
 		items: [
 			{
 				title: 'Introduction',
 				href: '/docs/svelte-outclick',
-			},
-			{
-				title: 'CHANGELOG',
-				href: '/docs/svelte-outclick/changelog',
 			},
 		],
 	},
@@ -20,14 +22,16 @@ export const docsMenuItems = readable([
 		title: 'TailwindCSS Addons',
 		href: '/docs/tailwindcss-addons',
 		github: 'https://github.com/babakfp/tailwindcss-addons',
+		importantItems: [
+			{
+				title: 'CHANGELOG',
+				href: '/docs/tailwindcss-addons/changelog',
+			},
+		],
 		items: [
 			{
 				title: 'Introduction',
 				href: '/docs/tailwindcss-addons',
-			},
-			{
-				title: 'CHANGELOG',
-				href: '/docs/tailwindcss-addons/changelog',
 			},
 			{
 				title: 'Presets',

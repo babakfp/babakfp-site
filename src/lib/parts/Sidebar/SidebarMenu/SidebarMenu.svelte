@@ -13,6 +13,19 @@
 				<span>{project.title}</span>
 				<SidebarMenuItemGithub href={project.github} />
 			</div>
+
+			{#if project.importantItems && project.importantItems.length > 0}
+				<ul class="border-b border-gray-700">
+					{#each project.importantItems as item}
+						<li>
+							<SidebarMenuItem href={item.href}>
+								{item.title}
+							</SidebarMenuItem>
+						</li>
+					{/each}
+				</ul>
+			{/if}
+
 			<!-- ITEMS -->
 			{#if project.items}
 				<ul>
