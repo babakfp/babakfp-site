@@ -19,6 +19,7 @@ export async function load({ fetch }) {
 		
 		return { repos }
 	} catch (_) {
+		console.log(_)
 		throw error(500, 'Unsuccessful fetching the data from GitHub!')
 	}
 }
