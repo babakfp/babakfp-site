@@ -11,7 +11,7 @@ export const docsMenuItems = readable([
 				href: '/docs/svelte-outclick',
 			},
 			{
-				title: 'Changelog',
+				title: 'CHANGELOG',
 				href: '/docs/svelte-outclick/changelog',
 			},
 		],
@@ -24,6 +24,10 @@ export const docsMenuItems = readable([
 			{
 				title: 'Introduction',
 				href: '/docs/tailwindcss-addons',
+			},
+			{
+				title: 'CHANGELOG',
+				href: '/docs/tailwindcss-addons/changelog',
 			},
 			{
 				title: 'Presets',
@@ -78,10 +82,6 @@ export const docsMenuItems = readable([
 						href: '/docs/tailwindcss-addons/not-variants',
 					},
 				],
-			},
-			{
-				title: 'Changelog',
-				href: '/docs/tailwindcss-addons/changelog',
 			},
 		],
 	},

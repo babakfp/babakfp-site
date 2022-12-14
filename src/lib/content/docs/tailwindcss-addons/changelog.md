@@ -1,5 +1,5 @@
 ---
-title: Changelog
+title: CHANGELOG
 ---
 
 ## 0.0.12

@@ -1,5 +1,5 @@
 ---
-title: Changelog
+title: CHANGELOG
 ---
 
 Restart your app after updating the package.
