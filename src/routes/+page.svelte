@@ -51,21 +51,14 @@
 
 <div class="max-w-prose mx-auto">
   <h1 class="text-white text-3xl font-semibold">Babak Farkhoopak</h1>
-  <code class="inline-code mt-2 inline-block !px-3">Digital Craftsman - Frontend Developer</code>
+  <code class="inline-code mt-2 inline-block !px-3">Digital Craftsman - JavaScript/Frontend Developer</code>
 
 	<p class="mt-4 leading-7">
-		I'm an indie JavaScript Frontend Developer.
-		All of my coding projects are built from the ground up,
-		from planning and designing all the way to solving
-		real-world problems with code.
-		I have contributed to dev communities as a mentor and a teacher and I hope that one day I will be able to work widely and effectively.
-		I have an eye for developing apps with great design and
-		user experience. I have developed many projects on open-source
-		in many ecosystems like Svelte, Vanilla, SASS/SCSS,
-		Wordpress, Elementor and etc.
-		My goal is to create something that is so valuable to humanity that there will be fought for it😈.
-		I'm currently building projects with Svelte,
-		and Node and trying out Deno.
+		All of my projects are built from the ground up, from planning and designing,
+		all the way to building fully-functional solutions.
+		I have built websites, open-source tools, Wordpress themes and plugins, and more.
+		I have contributed to communities and helped people in building their applications.
+		I have an eye on design and user experience.
 	</p>
 
 	<div class="mt-4 flex flex-wrap gap-4">
@@ -73,7 +66,7 @@
 			RESUME
 		</Link>
 		<Link href="https://github.com/babakfp?tab=repositories&q=&type=public&language=&sort=stargazers">
-			REPOS
+			GitHub
 		</Link>
 		<button
 			class="inline-flex gap-2 py-2 px-3 pr-4 rounded text-sm bg-gray-800/50 backdrop-blur highlight-white/5 select-none duration-150 hover:bg-gray-700/50"
@@ -102,35 +95,14 @@
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.1 49.8" class="w-4 h-4 fill-gray-400" aria-hidden="true">
 				<path d="M43.757 49.7H29.4a8.179 8.179 0 0 1-3-1C23.9 47 10.6 32.6 10.6 32.6v17.2H4.7a5.058 5.058 0 0 1-3.3-1.7 5.925 5.925 0 0 1-.477-.612 5.108 5.108 0 0 1-.787-1.756A5.3 5.3 0 0 1 0 44.9V4.792A4.873 4.873 0 0 1 4.594.1H19.9s3.2.1 4.7 1.6 14.7 15.6 14.7 15.6L25.1 32.6l6.2 6.6h8.1v-7.6h.093V5.3c0-.1 0-.189.007-.283V0h5.9a5.06 5.06 0 0 1 3.3 1.7v.005a5.228 5.228 0 0 1 1.019 1.626A5.307 5.307 0 0 1 50.1 4.9v12.7h-.007v26.9a5.335 5.335 0 0 1-5.3 5.3 5.4 5.4 0 0 1-1.036-.1ZM10.6 32.2v.4L25 17.4l-6.34-6.8H10.6v21.6Z" data-name="Path 1"/>
 			</svg>
-			RTL-Theme Products
+			RTL-Theme
 		</Link>
 		<Link href="https://elemen.ir">
-			Personal Store
+			Store
 		</Link>
 	</div>
 
-	<ul class="list-inside list-disc mt-4 space-y-2 leading-7">
-		<li>
-			🔭 I’m currently working on documentation for <a class="link" href="https://github.com/babakfp/svelte-outclick">Svlete OutClick</a> and <a class="link" href="https://github.com/babakfp/tailwindcss-addons">TailwindCSS Addons</a>, <a class="link" href="https://github.com/babakfp/dotland">DotLand</a> and <a class="link" href="https://github.com/babakfp/svelte-mdx">Svelte MDX</a>
-		</li>
-		<li>
-			🌱 I’m currently learning TypeScript, Deno, and Parsing.
-		</li>
-		<li>
-			👯 I’m looking to collaborate on Deno and Svelte.
-		</li>
-		<li>
-			🤔 I’m looking for help with getting a job in Germany with a BlueCard as fast as possible.
-		</li>
-		<li>
-			💬 Ask me about Frontend, Svelte, TailwindCSS, SASS/SCSS, and Wordpress.
-		</li>
-		<li>
-			📫 How to reach me: <a class="link" href="https://t.me/babakfp">Telegram</a>, <a class="link" href="mailto:babak.bxf@gmail.com">Email</a>.
-		</li>
-	</ul>
-
-	<div id="frontend-open-source" class="mt-8 scroll-mt-[calc(theme(spacing.header-height)_+_theme(spacing.8))] flex items-end justify-between gap-4">
+	<div id="frontend-open-source" class="mt-12 scroll-mt-[calc(theme(spacing.header-height)_+_theme(spacing.12))] flex items-end justify-between gap-4">
 		<h2 class="text-white uppercase text-2xl">Frontend open-source</h2>
 		<a class="text-sm link whitespace-nowrap" href="https://github.com/babakfp?tab=repositories&q=&type=public&language=&sort=stargazers" target="_blank" rel="noreferrer">See more</a>
 	</div>
@@ -149,7 +121,7 @@
 		{/each}
 	</ul>
 
-	<div id="wordpress-plugins" class="mt-8 scroll-mt-[calc(theme(spacing.header-height)_+_theme(spacing.8))] flex items-end justify-between gap-4">
+	<div id="wordpress-plugins" class="mt-12 scroll-mt-[calc(theme(spacing.header-height)_+_theme(spacing.12))] flex items-end justify-between gap-4">
 		<h2 class="text-white uppercase text-2xl">Wordpress Plugins</h2>
 		<!-- <a class="text-sm link whitespace-nowrap" href="https://profiles.wordpress.org/pixer/#content-plugins" target="_blank" rel="noreferrer">See more</a> -->
 	</div>
@@ -162,7 +134,7 @@
 		{/each}
 	</ul>
 
-	<div id="rtl-theme-products" class="mt-8 scroll-mt-[calc(theme(spacing.header-height)_+_theme(spacing.8))] flex items-end justify-between gap-4">
+	<div id="rtl-theme-products" class="mt-12 scroll-mt-[calc(theme(spacing.header-height)_+_theme(spacing.12))] flex items-end justify-between gap-4">
 		<h2 class="text-white uppercase text-2xl">RTL-Theme Products</h2>
 		<a class="text-sm link whitespace-nowrap" href="https://www.rtl-theme.com/author/babakfp/products" target="_blank" rel="noreferrer">See more</a>
 	</div>
