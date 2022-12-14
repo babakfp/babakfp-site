@@ -113,7 +113,7 @@
 		id="frontend-open-source"
 		class="mt-12 scroll-mt-[calc(theme(spacing.header-height)_+_theme(spacing.12))] flex items-end justify-between gap-4"
 	>
-		<h2 class="text-white uppercase text-2xl">Frontend open-source</h2>
+		<h2 class="text-white uppercase text-2xl">Frontend</h2>
 		<a
 			class="text-sm link whitespace-nowrap"
 			href="https://github.com/babakfp?tab=repositories&q=&type=public&language=&sort=stargazers"
@@ -140,7 +140,7 @@
 		id="wordpress-plugins"
 		class="mt-12 scroll-mt-[calc(theme(spacing.header-height)_+_theme(spacing.12))] flex items-end justify-between gap-4"
 	>
-		<h2 class="text-white uppercase text-2xl">Wordpress Plugins</h2>
+		<h2 class="text-white uppercase text-2xl">Wordpress</h2>
 		<!-- <a class="text-sm link whitespace-nowrap" href="https://profiles.wordpress.org/pixer/#content-plugins" target="_blank" rel="noreferrer">See more</a> -->
 	</div>
 
@@ -156,7 +156,7 @@
 		id="rtl-theme-products"
 		class="mt-12 scroll-mt-[calc(theme(spacing.header-height)_+_theme(spacing.12))] flex items-end justify-between gap-4"
 	>
-		<h2 class="text-white uppercase text-2xl">RTL-Theme Products</h2>
+		<h2 class="text-white uppercase text-2xl">Products</h2>
 		<a
 			class="text-sm link whitespace-nowrap"
 			href="https://www.rtl-theme.com/author/babakfp/products"
