@@ -55,9 +55,7 @@
 
 <div class="max-w-prose mx-auto">
 	<h1 class="text-white text-3xl font-semibold">Babak Farkhoopak</h1>
-	<code class="inline-code mt-2 inline-block !px-3"
-		>Digital Craftsman - JavaScript/Frontend Developer</code
-	>
+	<code class="inline-code mt-2 inline-block !px-3">JavaScript/Frontend Developer</code>
 
 	<p class="mt-4 leading-7">
 		All of my projects are built from the ground up, from planning and designing, all the way to
