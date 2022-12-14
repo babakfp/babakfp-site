@@ -108,7 +108,7 @@
 	</div>
 
 	<ul class="mt-4 grid gap-4">
-		{#each data.repos as repo}
+		{#each data.githubRepositories as repo}
 			<li>
 				<CardRepo
 					href={repo.html_url}
