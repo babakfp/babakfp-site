@@ -7,6 +7,16 @@ export const docsMenuItems = readable([
 		github: "https://github.com/babakfp/svelte-outclick",
 		importantItems: [
 			{
+				title: "Demo",
+				href: "https://svelte-outclick.vercel.app",
+				isExternal: true,
+			},
+			{
+				title: "NPM",
+				href: "https://www.npmjs.com/package/svelte-outclick",
+				isExternal: true,
+			},
+			{
 				title: "CHANGELOG",
 				href: "/docs/svelte-outclick/changelog",
 			},
@@ -23,6 +33,11 @@ export const docsMenuItems = readable([
 		href: "/docs/tailwindcss-addons",
 		github: "https://github.com/babakfp/tailwindcss-addons",
 		importantItems: [
+			{
+				title: "NPM",
+				href: "https://www.npmjs.com/package/tailwindcss-addons",
+				isExternal: true,
+			},
 			{
 				title: "CHANGELOG",
 				href: "/docs/tailwindcss-addons/changelog",

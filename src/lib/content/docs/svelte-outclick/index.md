@@ -4,10 +4,6 @@ title: Svelte OutClick
 
 `on:outclick`
 
-**v3.3.1** . [**DEMO**][demo] . [**REPO**][repo] . [**NPM**][npm]
-
----
-
 A Svelte component that allows you to listen to the clicks that happen outside of an element.
 
 Why choose this over the other packages?
@@ -184,7 +180,3 @@ At first, we were using the `click` event to capture the `outclick` event, but l
 
 - `keydown` event on `document.body` is ignored because this is how it works when you use `click` event instead.
 - `keydown` event only triggers with `Enter`, `NumpadEnter`, and `Space` keys (because this is how it works when you use the `click` event instead).
-
-[repo]: https://github.com/babakfp/svelte-outclick
-[demo]: https://svelte-outclick.vercel.app
-[npm]: https://www.npmjs.com/package/svelte-outclick

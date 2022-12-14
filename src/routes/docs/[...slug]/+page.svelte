@@ -13,7 +13,7 @@
 	<Sidebar />
 	<article class="xl:col-start-4 xl:col-end-13">
 		<div class="article-content">
-			<h1 class="!capitalize !text-5xl sm:!text-7xl">{data.metadata.title}</h1>
+			<h1>{data.metadata.title}</h1>
 			<svelte:component this={data.content} />
 		</div>
 	</article>

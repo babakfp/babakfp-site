@@ -15,11 +15,11 @@
 			</div>
 
 			{#if project.importantItems && project.importantItems.length > 0}
-				<ul class="border-b border-gray-700">
-					{#each project.importantItems as item}
+				<ul class="mb-2 pb-2 border-b border-gray-700">
+					{#each project.importantItems as { href, title, isExternal }}
 						<li>
-							<SidebarMenuItem href={item.href}>
-								{item.title}
+							<SidebarMenuItem {href} {isExternal}>
+								{title}
 							</SidebarMenuItem>
 						</li>
 					{/each}

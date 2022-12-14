@@ -1,8 +1,11 @@
 <script>
+	import { page } from "$app/stores"
+
 	export let href
+	export let isExternal = false
 	export let className = null
 	export { className as class }
-	import { page } from "$app/stores"
+
 	$: isCurrent = $page.url.pathname === href
 </script>
 
@@ -10,6 +13,8 @@
 	class="{className} group | block | py-2 pl-4 | duration-150 | hover:text-white {isCurrent &&
 		'text-white'}"
 	{href}
+	target={isExternal ? "_blank" : null}
+	rel={isExternal ? "noreferrer" : null}
 >
 	<div class="relative | px-4 xl:px-0">
 		<div
