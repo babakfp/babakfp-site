@@ -4,7 +4,7 @@
 	import { navigating } from "$app/stores"
 
 	import { isSideMenuOpen } from "$stores/menu.js"
-	import SidebarMenu from "./SidebarMenu/SidebarMenu.svelte"
+	import SidebarMenu from "./SidebarMenu.svelte"
 
 	$: $navigating, ($isSideMenuOpen = false)
 
@@ -19,15 +19,17 @@
 
 <nav
 	class="z-40 | fixed inset-0 top-header-height | bg-gray-900/50 backdrop-blur-lg | duration-150
-	hide {$isSideMenuOpen && 'show'}
-	xl:[all:unset] xl:block xl:!-mt-4 xl:!col-start-1 xl:!col-end-4
-"
+		hide {$isSideMenuOpen && 'show'}
+		xl:[all:unset] xl:!block
+	"
 >
 	<OutClick
 		tag="div"
-		class="w-full max-w-xs h-full pb-12 | bg-gray-800/95 | border-t border-t-transparent border-r border-r-white/5 | overflow-y-auto
+		id="sidebar-wrapper"
+		class="
+			w-full max-w-64 h-full pb-12 | bg-gray-800/95 | border-t border-t-transparent border-r border-r-white/5 | overflow-y-auto
 			duration-300 ease-in-out | -translate-x-full {$isSideMenuOpen && 'translate-x-0'}
-			xl:[all:unset] xl:block xl:!sticky xl:!top-[calc(theme(spacing.header-height)+theme(spacing.8))]
+			xl:[all:unset] xl:!block xl:!fixed xl:!top-header-height xl:!bottom-0 xl:!w-64 xl:!scrollbar-y
 		"
 		on:outclick={() => ($isSideMenuOpen = false)}
 		excludeQuerySelectorAll="#SidebarToggle"
@@ -35,3 +37,19 @@
 		<SidebarMenu />
 	</OutClick>
 </nav>
+
+<style lang="postcss">
+	:global(#sidebar-wrapper) {
+		@screen xl {
+			&::-webkit-scrollbar {
+				@apply w-1.5 h-1.5;
+				&-track {
+					@apply bg-gray-800;
+				}
+				&-thumb {
+					@apply bg-gray-700;
+				}
+			}
+		}
+	}
+</style>

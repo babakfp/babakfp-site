@@ -2,12 +2,17 @@ import { readable } from "svelte/store"
 
 export const docsMenuItems = readable([
 	{
-		href: "/docs/svelte-outclick",
-		github: "https://github.com/babakfp/svelte-outclick",
-		importantItems: [
+		name: "svelte-outclick",
+		rootUrl: "/docs/svelte-outclick",
+		primaryLinks: [
 			{
 				title: "Demo",
 				href: "https://svelte-outclick.vercel.app",
+				isExternal: true,
+			},
+			{
+				title: "GitHub",
+				href: "https://github.com/babakfp/svelte-outclick",
 				isExternal: true,
 			},
 			{
@@ -15,48 +20,73 @@ export const docsMenuItems = readable([
 				href: "https://www.npmjs.com/package/svelte-outclick",
 				isExternal: true,
 			},
-			{
-				title: "CHANGELOG",
-				href: "/docs/svelte-outclick/changelog",
-			},
 		],
 		items: [
 			{
-				title: "Introduction",
-				href: "/docs/svelte-outclick",
+				title: "Getting Started",
+				items: [
+					{
+						title: "Introduction",
+						href: "/docs/svelte-outclick",
+					},
+					{
+						title: "CHANGELOG",
+						href: "/docs/svelte-outclick/changelog",
+					},
+				],
 			},
 		],
 	},
 	{
-		href: "/docs/tailwindcss-addons",
-		github: "https://github.com/babakfp/tailwindcss-addons",
-		importantItems: [
+		name: "tailwindcss-addons",
+		rootUrl: "/docs/tailwindcss-addons",
+		primaryLinks: [
+			{
+				title: "GitHub",
+				href: "https://github.com/babakfp/tailwindcss-addons",
+				isExternal: true,
+			},
 			{
 				title: "NPM",
 				href: "https://www.npmjs.com/package/tailwindcss-addons",
 				isExternal: true,
 			},
-			{
-				title: "CHANGELOG",
-				href: "/docs/tailwindcss-addons/changelog",
-			},
 		],
 		items: [
 			{
-				title: "Introduction",
-				href: "/docs/tailwindcss-addons",
+				title: "Getting Started",
+				items: [
+					{
+						title: "Introduction",
+						href: "/docs/tailwindcss-addons",
+					},
+					{
+						title: "CHANGELOG",
+						href: "/docs/tailwindcss-addons/changelog",
+					},
+				],
 			},
 			{
 				title: "Presets",
+				// items: [
+				// 	{
+				// 		title: "Presets",
 				href: "/docs/tailwindcss-addons/presets",
+				// 	},
+				// ],
 			},
 			{
 				title: "Base",
+				// items: [
+				// 	{
+				// 		title: "Base",
 				href: "/docs/tailwindcss-addons/base",
+				// 	},
+				// ],
 			},
 			{
 				title: "Utilities",
-				subItems: [
+				items: [
 					{
 						title: "Direction",
 						href: "/docs/tailwindcss-addons/direction",
@@ -93,7 +123,7 @@ export const docsMenuItems = readable([
 			},
 			{
 				title: "Variants",
-				subItems: [
+				items: [
 					{
 						title: "Not Variants",
 						href: "/docs/tailwindcss-addons/not-variants",
