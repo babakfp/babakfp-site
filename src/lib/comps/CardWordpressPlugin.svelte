@@ -25,7 +25,7 @@
 		</div>
 	</div>
 
-	<ul class="flex items-center gap-6 mt-4 text-gray-400 text-xs font-mono">
+	<ul class="flex flex-wrap items-center gap-x-6 gap-y-2 mt-4 text-gray-400 text-xs font-mono">
 		<li>
 			Installs: {activeInstalls}
 		</li>
