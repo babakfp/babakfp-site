@@ -29,7 +29,7 @@
 		class="
 			w-full max-w-64 h-full pb-12 | bg-gray-800/95 | border-t border-t-transparent border-r border-r-white/5 | overflow-y-auto
 			duration-300 ease-in-out | -translate-x-full {$isSideMenuOpen && 'translate-x-0'}
-			xl:[all:unset] xl:!block xl:!fixed xl:!top-header-height xl:!bottom-0 xl:!w-64 xl:!scrollbar-y
+			xl:[all:unset] xl:!block xl:!fixed xl:!top-header-height xl:!bottom-0 xl:!w-64 xl:!overflow-y-auto
 		"
 		on:outclick={() => ($isSideMenuOpen = false)}
 		excludeQuerySelectorAll="#SidebarToggle"

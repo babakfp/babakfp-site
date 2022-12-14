@@ -68,21 +68,21 @@ export const docsMenuItems = readable([
 			},
 			{
 				title: "Presets",
-				// items: [
-				// 	{
-				// 		title: "Presets",
-				href: "/docs/tailwindcss-addons/presets",
-				// 	},
-				// ],
+				items: [
+					{
+						title: "Introduction",
+						href: "/docs/tailwindcss-addons/presets",
+					},
+				],
 			},
 			{
 				title: "Base",
-				// items: [
-				// 	{
-				// 		title: "Base",
-				href: "/docs/tailwindcss-addons/base",
-				// 	},
-				// ],
+				items: [
+					{
+						title: "Introduction",
+						href: "/docs/tailwindcss-addons/base",
+					},
+				],
 			},
 			{
 				title: "Utilities",
