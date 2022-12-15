@@ -23,7 +23,6 @@ The current syntax is weird and hard to remember, especially for beginners.
 {@debug}
 ```
 
-
 Let's use a simple and clean syntax like the example below.
 
 ```svelte
