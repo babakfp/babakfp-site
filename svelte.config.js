@@ -7,7 +7,7 @@ async function mdsvexHighlight(code, lang) {
 	try {
 		const highlighter = await getHighlighter({
 			theme: "rose-pine",
-			langs: ["html", "css", "js", "svelte", "php", "cmd", "typescript"],
+			langs: ["html", "css", "js", "ts", "svelte", "php", "cmd"],
 		})
 		const result = highlighter.codeToHtml(code, { lang })
 		return result
