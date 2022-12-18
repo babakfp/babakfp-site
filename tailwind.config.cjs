@@ -16,7 +16,7 @@ module.exports = {
 			transparent: "transparent",
 			white: "#FFFFFF",
 			primary: colors.sky[600],
-			"primary-light": colors.sky[500],
+			link: colors.sky[500],
 			gray: colors.slate,
 			sky: colors.sky,
 			indigo: colors.indigo,
