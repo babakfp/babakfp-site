@@ -12,6 +12,7 @@ module.exports = {
 			},
 		},
 		colors: {
+			current: "currentColor",
 			transparent: "transparent",
 			white: "#FFFFFF",
 			primary: colors.sky[600],

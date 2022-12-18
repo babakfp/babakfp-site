@@ -33,7 +33,7 @@
 				<li>
 					<a class="group | flex items-center gap-3 | py-2 px-4" href={item.href}>
 						<div
-							class="flex items-center justify-center | w-7.5 h-7.5 | bg-white/5 rounded | text-gray-400 | duration-150 [ group-hover:bg-white/10 group-hover:text-white ]"
+							class="flex items-center justify-center | w-7.5 h-7.5 | bg-white/5 rounded shadow | text-gray-400 | duration-150 [ group-hover:bg-white/10 group-hover:text-white ]"
 						>
 							{@html item.svg}
 						</div>
