@@ -2,12 +2,12 @@
 	import OutClick from "svelte-outclick"
 	import { browser } from "$app/environment"
 	import { navigating, page } from "$app/stores"
-	import { isMainMenuOpen, mainMenuItems } from "$stores/mainMenu.js"
+	import { isMenuOpen, menuItems } from "$stores/menu.js"
 
-	$: $navigating, ($isMainMenuOpen = false)
+	$: $navigating, ($isMenuOpen = false)
 
 	$: if (browser) {
-		if ($isMainMenuOpen) {
+		if ($isMenuOpen) {
 			document.body.classList.add("overflow-y-hidden")
 		} else {
 			document.body.classList.remove("overflow-y-hidden")
@@ -17,19 +17,19 @@
 
 <nav
 	class="z-40 | fixed inset-0 top-header-height | bg-gray-900/50 backdrop-blur-lg | duration-150
-	hide {$isMainMenuOpen && 'show'} xl:hidden
+	hide {$isMenuOpen && 'show'} xl:hidden
 "
 >
 	<OutClick
 		tag="div"
 		class="w-full py-6 | bg-gray-800/95 border-b border-white/5 | overflow-y-auto
-			duration-300 ease-in-out | -translate-y-full {$isMainMenuOpen && 'translate-y-0'}
+			duration-300 ease-in-out | -translate-y-full {$isMenuOpen && 'translate-y-0'}
 		"
-		on:outclick={() => ($isMainMenuOpen = false)}
+		on:outclick={() => ($isMenuOpen = false)}
 		excludeQuerySelectorAll="#MobileMenuToggle"
 	>
 		<ul>
-			{#each $mainMenuItems as item}
+			{#each $menuItems as item}
 				<li>
 					<a class="group | flex items-center gap-3 | py-2 px-4" href={item.href}>
 						<div

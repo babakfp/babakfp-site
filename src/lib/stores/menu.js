@@ -1,8 +1,8 @@
 import { writable, readable } from "svelte/store"
 
-export const isMainMenuOpen = writable(false)
+export const isMenuOpen = writable(false)
 
-export const mainMenuItems = readable([
+export const menuItems = readable([
 	{
 		title: "Home",
 		href: "/",

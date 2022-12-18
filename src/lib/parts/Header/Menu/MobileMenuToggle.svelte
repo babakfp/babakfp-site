@@ -1,11 +1,11 @@
 <script>
 	import MenuToggle from "$comps/MenuToggle.svelte"
-	import { isMainMenuOpen } from "$stores/mainMenu.js"
+	import { isMenuOpen } from "$stores/menu.js"
 </script>
 
 <MenuToggle
-	on:click={() => ($isMainMenuOpen = !$isMainMenuOpen)}
-	isOpen={$isMainMenuOpen}
+	on:click={() => ($isMenuOpen = !$isMenuOpen)}
+	isOpen={$isMenuOpen}
 	id="MobileMenuToggle"
 	ariaLabel="Mobile Menu Toggle"
 >
