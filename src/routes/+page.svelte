@@ -4,7 +4,7 @@
 	import CardWordpressPlugin from "$comps/CardWordpressPlugin.svelte"
 	import CardRtlTheme from "$comps/CardRtlTheme.svelte"
 	import toast, { Toaster } from "svelte-french-toast"
-	import ButtonLabel from "./ButtonLabel.svelte"
+	import ButtonLabel from "$comps/ButtonLabel.svelte"
 
 	export let data
 	const wordpressPlugins = [
