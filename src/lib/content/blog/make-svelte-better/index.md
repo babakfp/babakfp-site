@@ -1,8 +1,8 @@
 ---
 title: Make Svelte better
 description: Let's talk about missing features in Svelte and more.
-modifiedAt: '2022-10-31'
-publishedAt: '2022-02-28'
+updateDate: '2022/10/31'
+publishDate: '2022/02/28'
 ---
 
 <script>

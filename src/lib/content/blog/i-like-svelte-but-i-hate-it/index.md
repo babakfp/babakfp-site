@@ -1,8 +1,8 @@
 ---
 title: I like Svelte, but I hate it!
 description: I'm using Svelte sense 2020 and this is why I really hate it.
-modifiedAt: '2022-04-28'
-publishedAt: '2022-02-28'
+updateDate: '2022/04/28'
+publishDate: '2022/02/28'
 ---
 
 <script>

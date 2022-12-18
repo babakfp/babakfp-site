@@ -26,7 +26,7 @@ const validateMissingMetadata = (requiredMetadatas, availableMetadatas, path) =>
  */
 const getRequiredMetadatas = postType => {
 	if (postType === PostTypes.BLOG) {
-		return ["title", "description", "modifiedAt", "publishedAt"]
+		return ["title", "description", "updateDate", "publishDate"]
 	}
 	return ["title"]
 }

@@ -17,7 +17,7 @@
 
 <div class="max-w-prose mx-auto xl:max-w-none xl:grid xl:grid-cols-12 xl:gap-12">
 	<article class="xl:col-start-1 xl:col-end-9">
-		<PostDate modifiedAt={data.metadata.modifiedAt} publishedAt={data.metadata.publishedAt} />
+		<PostDate updateDate={data.metadata.updateDate} publishDate={data.metadata.publishDate} />
 
 		<div class="article-content">
 			<h1 class="mt-8">{data.metadata.title}</h1>
