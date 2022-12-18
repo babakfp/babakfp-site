@@ -2,7 +2,7 @@
 	import { page } from "$app/stores"
 	import MenuToggle from "$comps/MenuToggle.svelte"
 	import { isSidebarOpen } from "$stores/sidebar.js"
-	import IconListUl from "$icons/IconListUl.svelte"
+	import IconList from "$icons/IconList.svelte"
 	import IconX from "$icons/IconX.svelte"
 </script>
 
@@ -14,7 +14,7 @@
 		ariaLabel="Sidebar Toggle"
 	>
 		<svelte:fragment slot="icon-open">
-			<IconListUl class="text-2xl" />
+			<IconList class="text-2xl" />
 		</svelte:fragment>
 		<svelte:fragment slot="icon-close">
 			<IconX class="text-2xl" />
