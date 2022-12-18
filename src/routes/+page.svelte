@@ -71,27 +71,32 @@
 	</p>
 
 	<div class="mt-4 flex flex-wrap items-center gap-4">
-		<a class="group | btn-link" href={resumeUrl}>
+		<a class="group | btn-link" href={resumeUrl} target="_blank" rel="noreferrer">
 			<span>View Resume</span>
 			<ButtonLabel type="external" />
 		</a>
 
-		<a class="group | btn-link" href={githubReposUrl}>
+		<a class="group | btn-link" href={githubReposUrl} target="_blank" rel="noreferrer">
 			<span>View Repos</span>
 			<ButtonLabel type="external" />
 		</a>
 
-		<a class="group | btn-link" href={dribbbleDesigns}>
+		<a class="group | btn-link" href={dribbbleDesigns} target="_blank" rel="noreferrer">
 			<span>Dribbble UI Designs</span>
 			<ButtonLabel type="external" />
 		</a>
 
-		<a class="group | btn-link" href="https://elemen.ir">
+		<a class="group | btn-link" href="https://elemen.ir" target="_blank" rel="noreferrer">
 			<span>My Online Store</span>
 			<ButtonLabel type="external" />
 		</a>
 
-		<a class="group | btn-link" href="https://www.rtl-theme.com/author/babakfp/products">
+		<a
+			class="group | btn-link"
+			href="https://www.rtl-theme.com/author/babakfp/products"
+			target="_blank"
+			rel="noreferrer"
+		>
 			<span>My Products on RTL-Theme</span>
 			<ButtonLabel type="external" />
 		</a>
@@ -103,10 +108,9 @@
 			on:click={() => toast.success("Copied to Clipboard!", { position: "bottom-right" })}
 		>
 			<span>Email</span>
-			<ButtonLabel type="copy" />
 		</button>
 
-		<a class="group | btn-link" href="https://t.me/babakfp">
+		<a class="group | btn-link" href="https://t.me/babakfp" target="_blank" rel="noreferrer">
 			<span>Telegram</span>
 			<ButtonLabel type="external" />
 		</a>
