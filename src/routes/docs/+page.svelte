@@ -7,8 +7,6 @@
 	<title>Documentation</title>
 </svelte:head>
 
-<h1 class="text-white text-3xl font-black uppercase sm:text-4xl">Documentation</h1>
-
 <ul class="grid gap-4 | mt-8">
 	{#each $sidebarItems as { rootUrl, name }}
 		<li>

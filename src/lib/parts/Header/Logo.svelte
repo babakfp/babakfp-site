@@ -10,7 +10,7 @@
 			title = "blog"
 			href = "/blog"
 		} else if ($page.url.pathname.startsWith("/docs")) {
-			title = "docs"
+			title = "documentation"
 			href = "/docs"
 		} else {
 			title = "babakfp"
@@ -20,16 +20,12 @@
 </script>
 
 <a
-	class="flex items-center | h-full | font-mono text-sm text-white font-black uppercase xl:px-4 xl:text-base"
+	class="relative overflow-hidden flex items-center | w-full h-full | font-mono text-sm text-white font-black uppercase xl:px-4 xl:text-base"
 	{href}
 >
-	<div
-		class="relative flex items-center justify-center w-24 h-9 overflow-hidden bg-gray-800 highlight-white/5 rounded shadow"
-	>
-		{#key title}
-			<div class="absolute" in:fly={{ x: 96, duration: 500 }} out:fly={{ x: -96, duration: 500 }}>
-				{title}
-			</div>
-		{/key}
-	</div>
+	{#key title}
+		<div class="absolute" in:fly={{ y: 32, duration: 300 }} out:fly={{ y: -32, duration: 300 }}>
+			{title}
+		</div>
+	{/key}
 </a>
