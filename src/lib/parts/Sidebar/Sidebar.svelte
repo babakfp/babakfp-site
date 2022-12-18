@@ -4,6 +4,7 @@
 	import { navigating } from "$app/stores"
 	import { isSidebarOpen, sidebarScrollPosition } from "$stores/sidebar.js"
 	import SidebarMenu from "./SidebarMenu.svelte"
+	import PopupBackdrop from "$comps/PopupBackdrop.svelte"
 
 	$: $navigating, ($isSidebarOpen = false)
 
@@ -17,17 +18,14 @@
 	}
 </script>
 
-<nav
-	class="z-40 | fixed inset-0 top-header-height | bg-gray-800/50 backdrop-blur-lg | duration-150
-		hide {$isSidebarOpen && 'show'}
-		xl:[all:unset] xl:!block
-	"
->
+<PopupBackdrop isVisible={$isSidebarOpen} />
+
+<nav>
 	<OutClick
 		tag="div"
 		id="sidebar-wrapper"
 		class="
-			w-full max-w-64 h-full pb-12 | bg-gray-800/95 | border-t border-t-transparent border-r border-r-white/5 | overflow-y-auto
+			z-40 | fixed | left-0 top-header-height bottom-0 | w-full max-w-64 pb-12 | bg-gray-800 | border-t border-t-transparent border-r border-r-white/5 | overflow-y-auto
 			duration-300 ease-in-out | -translate-x-full {$isSidebarOpen && 'translate-x-0'}
 			xl:[all:unset] xl:!block xl:!fixed xl:!top-header-height xl:!bottom-0 xl:!w-64 xl:!overflow-y-auto
 		"
