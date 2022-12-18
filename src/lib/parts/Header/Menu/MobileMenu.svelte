@@ -3,6 +3,7 @@
 	import { browser } from "$app/environment"
 	import { navigating, page } from "$app/stores"
 	import { isMenuOpen, menuItems } from "$stores/menu.js"
+	import PopupBackdrop from "$comps/PopupBackdrop.svelte"
 
 	$: $navigating, ($isMenuOpen = false)
 
@@ -15,13 +16,7 @@
 	}
 </script>
 
-<div
-	class="
-		z-40 | fixed inset-0 | bg-gray-800/50 backdrop-blur | duration-300 ease-in-out
-		hide {$isMenuOpen && 'show'}
-		xl:hidden
-	"
-/>
+<PopupBackdrop isVisible={$isMenuOpen} />
 
 <OutClick excludeQuerySelectorAll="#MobileMenuToggle" on:outclick={() => ($isMenuOpen = false)}>
 	<nav
