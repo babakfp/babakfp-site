@@ -15,18 +15,21 @@
 	}
 </script>
 
-<nav
-	class="z-40 | fixed inset-0 top-header-height | bg-gray-800/50 backdrop-blur-lg | duration-150
-	hide {$isMenuOpen && 'show'} xl:hidden
-"
->
-	<OutClick
-		tag="div"
-		class="w-full py-6 | bg-gray-800/95 border-b border-white/5 | overflow-y-auto
-			duration-300 ease-in-out | -translate-y-full {$isMenuOpen && 'translate-y-0'}
+<div
+	class="
+		z-40 | fixed inset-0 | bg-gray-800/50 backdrop-blur | duration-300 ease-in-out
+		hide {$isMenuOpen && 'show'}
+		xl:hidden
+	"
+/>
+
+<OutClick excludeQuerySelectorAll="#MobileMenuToggle" on:outclick={() => ($isMenuOpen = false)}>
+	<nav
+		class="
+			z-40 | fixed top-header-height inset-x-0 | w-full py-6 | bg-gray-800 shadow | duration-300 ease-in-out
+			-translate-y-full {$isMenuOpen && 'translate-y-0'}
+			xl:hidden
 		"
-		on:outclick={() => ($isMenuOpen = false)}
-		excludeQuerySelectorAll="#MobileMenuToggle"
 	>
 		<ul>
 			{#each $menuItems as item}
@@ -44,5 +47,5 @@
 				</li>
 			{/each}
 		</ul>
-	</OutClick>
-</nav>
+	</nav>
+</OutClick>
