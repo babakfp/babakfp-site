@@ -10,7 +10,7 @@
 <ul class="grid gap-4 | mt-8">
 	{#each $sidebarItems as { rootUrl, name }}
 		<li>
-			<Card class="px-6" href={rootUrl} arrowCenterRight={true}>
+			<Card href={rootUrl} arrowCenter={true}>
 				<h2 class="text-white text-lg font-semibold font-mono">
 					<!-- prettier-ignore -->
 					<svg class="text-xl text-gray-400" aria-hidden="true" viewBox="0 0 16 16">
