@@ -21,8 +21,8 @@
 <OutClick
 	tag="nav"
 	class="
-		z-40 | fixed top-header-height inset-x-0 | w-full py-6 | bg-gray-800 shadow | duration-300 ease-in-out
-		-translate-y-full {$isMenuOpen && 'translate-y-0'}
+		z-40 | fixed top-header-height inset-x-0 | w-full py-6 | bg-gray-800 shadow
+		duration-300 ease-in-out | -translate-y-full {$isMenuOpen && 'translate-y-0'}
 		xl:hidden
 	"
 	excludeQuerySelectorAll="#MobileMenuToggle"
