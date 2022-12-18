@@ -1,8 +1,8 @@
 import { writable, readable } from "svelte/store"
 
-export const isSideMenuOpen = writable(false)
+export const isSidebarOpen = writable(false)
 
-export const docsMenuItems = readable([
+export const sidebarItems = readable([
 	{
 		name: "svelte-outclick",
 		rootUrl: "/docs/svelte-outclick",

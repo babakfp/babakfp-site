@@ -1,10 +1,10 @@
 <script>
 	import { page } from "$app/stores"
-	import { docsMenuItems } from "$stores/sidebar.js"
+	import { sidebarItems } from "$stores/sidebar.js"
 	import SidebarMenuItem from "./SidebarMenuItem.svelte"
 </script>
 
-{#each $docsMenuItems as project}
+{#each $sidebarItems as project}
 	{#if $page.url.pathname.startsWith(project.rootUrl) || $page.url.pathname === "/docs"}
 		<!--  -->
 		<div class="grid gap-4 pb-12">

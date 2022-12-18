@@ -1,5 +1,5 @@
 <script>
-	import { docsMenuItems } from "$stores/sidebar.js"
+	import { sidebarItems } from "$stores/sidebar.js"
 	import Card from "$comps/Card.svelte"
 </script>
 
@@ -10,7 +10,7 @@
 <h1 class="text-white text-3xl font-black uppercase sm:text-4xl">Documentation</h1>
 
 <ul class="grid gap-4 | mt-8">
-	{#each $docsMenuItems as { rootUrl, name }}
+	{#each $sidebarItems as { rootUrl, name }}
 		<li>
 			<Card class="px-6" href={rootUrl} arrowCenterRight={true}>
 				<h2 class="text-white text-lg font-semibold font-mono">

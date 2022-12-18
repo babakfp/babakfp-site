@@ -1,13 +1,13 @@
 <script>
 	import { page } from "$app/stores"
 	import MenuToggle from "$comps/MenuToggle.svelte"
-	import { isSideMenuOpen } from "$stores/sidebar.js"
+	import { isSidebarOpen } from "$stores/sidebar.js"
 </script>
 
 {#if $page.url.pathname.startsWith("/docs") && $page.url.pathname !== "/docs"}
 	<MenuToggle
-		on:click={() => ($isSideMenuOpen = !$isSideMenuOpen)}
-		isOpen={$isSideMenuOpen}
+		on:click={() => ($isSidebarOpen = !$isSidebarOpen)}
+		isOpen={$isSidebarOpen}
 		id="SidebarToggle"
 		ariaLabel="Sidebar Toggle"
 	>

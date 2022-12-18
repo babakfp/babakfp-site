@@ -3,13 +3,13 @@
 	import { browser } from "$app/environment"
 	import { navigating } from "$app/stores"
 
-	import { isSideMenuOpen } from "$stores/sidebar.js"
+	import { isSidebarOpen } from "$stores/sidebar.js"
 	import SidebarMenu from "./SidebarMenu.svelte"
 
-	$: $navigating, ($isSideMenuOpen = false)
+	$: $navigating, ($isSidebarOpen = false)
 
 	$: if (browser) {
-		if ($isSideMenuOpen) {
+		if ($isSidebarOpen) {
 			document.body.classList.add("overflow-y-hidden")
 		} else {
 			document.body.classList.remove("overflow-y-hidden")
@@ -19,7 +19,7 @@
 
 <nav
 	class="z-40 | fixed inset-0 top-header-height | bg-gray-900/50 backdrop-blur-lg | duration-150
-		hide {$isSideMenuOpen && 'show'}
+		hide {$isSidebarOpen && 'show'}
 		xl:[all:unset] xl:!block
 	"
 >
@@ -28,10 +28,10 @@
 		id="sidebar-wrapper"
 		class="
 			w-full max-w-64 h-full pb-12 | bg-gray-800/95 | border-t border-t-transparent border-r border-r-white/5 | overflow-y-auto
-			duration-300 ease-in-out | -translate-x-full {$isSideMenuOpen && 'translate-x-0'}
+			duration-300 ease-in-out | -translate-x-full {$isSidebarOpen && 'translate-x-0'}
 			xl:[all:unset] xl:!block xl:!fixed xl:!top-header-height xl:!bottom-0 xl:!w-64 xl:!overflow-y-auto
 		"
-		on:outclick={() => ($isSideMenuOpen = false)}
+		on:outclick={() => ($isSidebarOpen = false)}
 		excludeQuerySelectorAll="#SidebarToggle"
 	>
 		<SidebarMenu />
