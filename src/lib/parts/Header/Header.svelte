@@ -6,7 +6,7 @@
 	import Title from "./Title.svelte"
 </script>
 
-<header class="z-50 | sticky top-0 | h-header-height | bg-gray-800/95 backdrop-blur-lg shadow">
+<header class="z-50 | sticky top-0 | h-header-height | bg-gray-800 shadow">
 	<div class="container px-0 | h-full | flex justify-between">
 		<div class="flex w-full">
 			<MobileMenuToggle />
