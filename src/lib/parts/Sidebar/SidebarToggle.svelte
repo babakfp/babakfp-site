@@ -2,6 +2,8 @@
 	import { page } from "$app/stores"
 	import MenuToggle from "$comps/MenuToggle.svelte"
 	import { isSidebarOpen } from "$stores/sidebar.js"
+	import IconListUl from "$icons/IconListUl.svelte"
+	import IconX from "$icons/IconX.svelte"
 </script>
 
 {#if $page.url.pathname.startsWith("/docs") && $page.url.pathname !== "/docs"}
@@ -12,16 +14,10 @@
 		ariaLabel="Sidebar Toggle"
 	>
 		<svelte:fragment slot="icon-open">
-			<!-- prettier-ignore -->
-			<svg class="text-2xl" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-				<path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
-			</svg>
+			<IconListUl class="text-2xl" />
 		</svelte:fragment>
 		<svelte:fragment slot="icon-close">
-			<!-- prettier-ignore -->
-			<svg class="text-2xl" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-				<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-			</svg>
+			<IconX class="text-2xl" />
 		</svelte:fragment>
 	</MenuToggle>
 {/if}

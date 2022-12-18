@@ -22,6 +22,7 @@ export default {
 		adapter: adapter(),
 		alias: {
 			$comps: "src/lib/comps",
+			$icons: "src/lib/comps/icons",
 			$parts: "src/lib/parts",
 			$utils: "src/lib/utils",
 			$stores: "src/lib/stores",
