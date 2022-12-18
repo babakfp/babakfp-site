@@ -18,9 +18,9 @@ module.exports = {
 			primary: colors.sky[600],
 			link: colors.sky[500],
 			gray: {
-				50: colors.slate[50],
-				100: colors.slate[100],
-				200: colors.slate[200],
+				// 50: colors.slate[50],
+				// 100: colors.slate[100],
+				// 200: colors.slate[200],
 				300: colors.slate[300],
 				400: colors.slate[400],
 				500: colors.slate[500],
