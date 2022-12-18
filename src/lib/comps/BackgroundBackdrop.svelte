@@ -2,21 +2,6 @@
 	import { onDestroy } from "svelte"
 	import { getRandomNumber } from "$utils/getRandomNumber.js"
 	let backgroundImage
-
-	//TODO: Is typo currect?
-	// onDestroy(()=> console.log('destroyed'))
-	// const bgPositions = ['!bg-top', '!bg-left-top', '!bg-right-top', '!bg-center', '!bg-bottom', '!bg-left-bottom', '!bg-right-bottom']
-	// let prevIndex
-	// let currentIndex
-	// $: if (backgroundImage) {
-	// 	//TODO: Remove on destroy
-	// 	setInterval(()=> {
-	// 		if (prevIndex) backgroundImage.classList.remove(bgPositions[prevIndex])
-	// 		currentIndex = getRandomNumber(0, bgPositions.length - 1)
-	// 		backgroundImage.classList.add(bgPositions[currentIndex])
-	// 		prevIndex = currentIndex
-	// 	}, 10000)
-	// }
 </script>
 
 <div
@@ -35,14 +20,5 @@
 		background-image: url("/img/background-image.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
-		/* animation-name: bg-position-move;
-		animation-duration: 60s;
-		animation-timing-function: linear;
-		animation-iteration-count: infinite; */
 	}
-	/* @keyframes bg-position-move {
-		0% { @apply bg-left-top }
-		50% { @apply bg-right-bottom }
-		100% { @apply bg-left-top }
-	} */
 </style>
