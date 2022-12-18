@@ -18,7 +18,7 @@
 </script>
 
 <nav
-	class="z-40 | fixed inset-0 top-header-height | bg-gray-900/50 backdrop-blur-lg | duration-150
+	class="z-40 | fixed inset-0 top-header-height | bg-gray-800/50 backdrop-blur-lg | duration-150
 		hide {$isSidebarOpen && 'show'}
 		xl:[all:unset] xl:!block
 	"

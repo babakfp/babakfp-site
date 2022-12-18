@@ -48,7 +48,7 @@
 	<!-- COLLAPSE STUFF -->
 	{#if isCollapsable}
 		<div class="!m-0 | {isCollapsed ? 'absolute bottom-0' : 'sticky -bottom-2 !mt-2 pb-6' } inset-x-0 | flex justify-center items-center | p-4 | bg-gray-800/25 rounded backdrop-blur | xl:hidden">
-			<butttn class="relative | py-2.5 px-6 bg-gray-800 rounded-full highlight-white/5 cursor-pointer | text-xs | duration-150 hover:bg-gray-900"
+			<butttn class="relative | py-2.5 px-6 bg-gray-800 rounded-full highlight-white/5 cursor-pointer | text-xs | duration-150 hover:bg-gray-700"
 				on:click={()=> isCollapsed = !isCollapsed}
 			>
 				{isCollapsed ? 'Show all classes' : 'Show fewer classes'}
