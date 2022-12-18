@@ -1,7 +1,7 @@
 <script>
 	import { page } from "$app/stores"
 	import MenuToggle from "$comps/MenuToggle.svelte"
-	import { isSideMenuOpen } from "$stores/menu.js"
+	import { isSideMenuOpen } from "$stores/sidebar.js"
 </script>
 
 {#if $page.url.pathname.startsWith("/docs") && $page.url.pathname !== "/docs"}

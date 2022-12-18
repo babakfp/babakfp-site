@@ -3,7 +3,7 @@
 	import { browser } from "$app/environment"
 	import { navigating } from "$app/stores"
 
-	import { isSideMenuOpen } from "$stores/menu.js"
+	import { isSideMenuOpen } from "$stores/sidebar.js"
 	import SidebarMenu from "./SidebarMenu.svelte"
 
 	$: $navigating, ($isSideMenuOpen = false)

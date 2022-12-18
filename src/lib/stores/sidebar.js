@@ -1,4 +1,6 @@
-import { readable } from "svelte/store"
+import { writable, readable } from "svelte/store"
+
+export const isSideMenuOpen = writable(false)
 
 export const docsMenuItems = readable([
 	{
