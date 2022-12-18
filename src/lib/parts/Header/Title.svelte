@@ -26,7 +26,11 @@
 	<span class="hide" aria-hidden="true">{title}</span>
 
 	{#key title}
-		<div class="absolute" in:fly={{ y: 32, duration: 300 }} out:fly={{ y: -32, duration: 300 }}>
+		<div
+			class="absolute -mb-1"
+			in:fly={{ y: 32, duration: 300 }}
+			out:fly={{ y: -32, duration: 300 }}
+		>
 			{title}
 		</div>
 	{/key}
