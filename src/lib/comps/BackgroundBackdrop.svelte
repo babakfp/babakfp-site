@@ -9,7 +9,7 @@
 />
 <div
 	bind:this={backgroundImage}
-	class="background-image | fixed inset-0 | opacity-50 | bg-center duration-[2s]"
+	class="background-image | fixed inset-x-0 -inset-y-1/2 | opacity-50 | bg-center duration-[2s]"
 />
 
 <style lang="postcss">
