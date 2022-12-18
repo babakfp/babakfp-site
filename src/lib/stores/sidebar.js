@@ -135,3 +135,5 @@ export const sidebarItems = readable([
 		],
 	},
 ])
+
+export const sidebarScrollPosition = writable(0)
