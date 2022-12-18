@@ -12,7 +12,7 @@ async function mdsvexHighlight(code, lang) {
 		const result = highlighter.codeToHtml(code, { lang })
 		return result
 	} catch (error) {
-		console.log(error)
+		throw new Error(error)
 	}
 }
 
