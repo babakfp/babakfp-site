@@ -35,8 +35,7 @@
 			description:
 				"A Wordpress plugin to build fullpage scrollable sections with Elementor Page Builder.",
 			href: "https://www.rtl-theme.com/pixerul-wordpress-plugin",
-			thumb:
-				"https://files.rtl-theme.com/attachments/2022/01/6a61ed2f8328c890731182a647624375268847d0b43620-160x160.png",
+			thumb: "/img/rtl-theme-portfolios/elementor-fullpage-scroll.png",
 			sales: 112,
 			rating: 4.5,
 			reviewsCount: 15,
@@ -45,8 +44,7 @@
 			title: "Elementor Fullpage Accordion",
 			description: "A Wordpress plugin to build fullpage accordions with Elementor Page Builder.",
 			href: "https://www.rtl-theme.com/elementor-fullpage-accordion-wordpress-plugin",
-			thumb:
-				"https://files.rtl-theme.com/attachments/2022/02/c6f8a685d11b7802d1b380775763a4697385e842bde6d7-160x160.png",
+			thumb: "/img/rtl-theme-portfolios/elementor-fullpage-accordion.png",
 			sales: 6,
 			rating: null,
 			reviewsCount: 0,
