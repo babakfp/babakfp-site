@@ -147,7 +147,7 @@
 					</a>
 				{/if}
 			</div>
-			<a class="absolute inset-0" href={portfolio.address} />
+			<a class="absolute inset-0" href={portfolio.address} target="_blank" rel="noreferrer" />
 		</li>
 	{/each}
 </ul>
