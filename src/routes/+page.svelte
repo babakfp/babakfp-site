@@ -125,9 +125,13 @@
 <ul class="mt-12 grid gap-8 sm:grid-cols-2 sm:gap-6 lg:gap-y-8">
 	{#each frontendPortfolios as portfolio}
 		<li class="group relative">
-			<img class="rounded duration-300 group-hover:rotate-2" src={portfolio.poster} alt />
 			<img
-				class="absolute inset-0 -z-1 rounded duration-150 blur-sm hide scale-95 !opacity-80 group-hover:show group-hover:-rotate-2 group-hover:scale-100"
+				class="aspect-[32/15] rounded duration-300 group-hover:rotate-2"
+				src={portfolio.poster}
+				alt
+			/>
+			<img
+				class="aspect-[32/15] absolute inset-0 -z-1 rounded duration-150 blur-sm hide scale-95 !opacity-80 group-hover:show group-hover:-rotate-2 group-hover:scale-100"
 				src={portfolio.poster}
 				alt
 				aria-hidden="true"
