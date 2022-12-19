@@ -165,7 +165,7 @@
 	{/each}
 </ul>
 
-<div class="max-w-prose mx-auto">
+<div class="max-w-prose mx-auto sm:mt-24">
 	<div
 		id="frontend-open-source"
 		class="mt-12 scroll-mt-[calc(theme(spacing.header-height)_+_theme(spacing.12))] flex items-end justify-between gap-4"
