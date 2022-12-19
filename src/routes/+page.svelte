@@ -157,13 +157,9 @@
 		id="frontend-open-source"
 		class="mt-12 scroll-mt-[calc(theme(spacing.header-height)_+_theme(spacing.12))] flex items-end justify-between gap-4"
 	>
-		<h2 class="text-white uppercase text-2xl">Frontend</h2>
-		<a
-			class="text-sm link whitespace-nowrap"
-			href="https://github.com/babakfp?tab=repositories&q=&type=public&language=&sort=stargazers"
-			target="_blank"
-			rel="noreferrer">See more</a
-		>
+		<h2 class="text-white uppercase text-2xl">
+			Frontend <small class="text-[60%]">open-sources</small>
+		</h2>
 	</div>
 
 	<ul class="mt-4 grid gap-4">
@@ -184,8 +180,9 @@
 		id="wordpress-plugins"
 		class="mt-12 scroll-mt-[calc(theme(spacing.header-height)_+_theme(spacing.12))] flex items-end justify-between gap-4"
 	>
-		<h2 class="text-white uppercase text-2xl">Wordpress</h2>
-		<!-- <a class="text-sm link whitespace-nowrap" href="https://profiles.wordpress.org/pixer/#content-plugins" target="_blank" rel="noreferrer">See more</a> -->
+		<h2 class="text-white uppercase text-2xl">
+			Wordpress <small class="text-[60%]">open-sources</small>
+		</h2>
 	</div>
 
 	<ul class="mt-4 grid gap-4">
@@ -200,13 +197,9 @@
 		id="rtl-theme-products"
 		class="mt-12 scroll-mt-[calc(theme(spacing.header-height)_+_theme(spacing.12))] flex items-end justify-between gap-4"
 	>
-		<h2 class="text-white uppercase text-2xl">Products</h2>
-		<a
-			class="text-sm link whitespace-nowrap"
-			href="https://www.rtl-theme.com/author/babakfp/products"
-			target="_blank"
-			rel="noreferrer">See more</a
-		>
+		<h2 class="text-white uppercase text-2xl">
+			Wordpress <small class="text-[60%]">products</small>
+		</h2>
 	</div>
 
 	<ul class="mt-4 grid gap-4">
