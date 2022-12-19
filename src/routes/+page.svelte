@@ -116,7 +116,8 @@
 			class="group | btn"
 			title="babak.bxf@gmail.com"
 			use:copy={"babak.bxf@gmail.com"}
-			on:click={() => toast.success("Copied to Clipboard!", { position: "bottom-right" })}
+			on:click={() =>
+				toast.success("The email address copied to your Clipboard!", { position: "bottom-right" })}
 		>
 			<span>Email me</span>
 		</button>
