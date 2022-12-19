@@ -108,22 +108,7 @@
 		</a>
 
 		<a class="group | btn-link" href={dribbbleDesigns} target="_blank" rel="noreferrer">
-			<span>Dribbble UI Designs</span>
-			<ButtonLabel type="external" />
-		</a>
-
-		<a class="group | btn-link" href="https://elemen.ir" target="_blank" rel="noreferrer">
-			<span>My Online Store</span>
-			<ButtonLabel type="external" />
-		</a>
-
-		<a
-			class="group | btn-link"
-			href="https://www.rtl-theme.com/author/babakfp/products"
-			target="_blank"
-			rel="noreferrer"
-		>
-			<span>My Products on RTL-Theme</span>
+			<span>UI Designs</span>
 			<ButtonLabel type="external" />
 		</a>
 
@@ -135,11 +120,6 @@
 		>
 			<span>Email me</span>
 		</button>
-
-		<a class="group | btn-link" href="https://t.me/babakfp" target="_blank" rel="noreferrer">
-			<span>Telegram</span>
-			<ButtonLabel type="external" />
-		</a>
 	</div>
 </div>
 
@@ -235,6 +215,30 @@
 			</li>
 		{/each}
 	</ul>
+</div>
+
+<hr class="my-12" />
+
+<div class="mt-4 flex flex-wrap items-center gap-4 font-mono">
+	<a class="group | btn-link" href="https://elemen.ir" target="_blank" rel="noreferrer">
+		<span>Shop</span>
+		<ButtonLabel type="external" />
+	</a>
+
+	<a
+		class="group | btn-link"
+		href="https://www.rtl-theme.com/author/babakfp/products"
+		target="_blank"
+		rel="noreferrer"
+	>
+		<span>RTL-THEME</span>
+		<ButtonLabel type="external" />
+	</a>
+
+	<a class="group | btn-link" href="https://t.me/babakfp" target="_blank" rel="noreferrer">
+		<span>Telegram</span>
+		<ButtonLabel type="external" />
+	</a>
 </div>
 
 <Toaster />
