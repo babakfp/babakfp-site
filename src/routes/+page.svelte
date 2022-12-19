@@ -5,6 +5,7 @@
 	import CardRtlTheme from "$comps/CardRtlTheme.svelte"
 	import toast, { Toaster } from "svelte-french-toast"
 	import ButtonLabel from "$comps/ButtonLabel.svelte"
+	import IconGithub from "$icons/IconGithub.svelte"
 
 	export let data
 	const wordpressPlugins = [
@@ -57,6 +58,31 @@
 	const githubReposUrl =
 		"https://github.com/babakfp?tab=repositories&q=&type=public&language=&sort=stargazers"
 	const dribbbleDesigns = "https://dribbble.com/babakfp"
+
+	const frontendPortfolios = [
+		{
+			title: "FarsGamer (open-source)",
+			poster: "/img/frontend-portfolios/farsgamer.vercel.app.png",
+			address: "https://farsgamer.vercel.app",
+			githubAddress: "http://github.com/babakfp/farsgamer",
+		},
+		{
+			title: "IDPay (open-source)",
+			poster: "/img/frontend-portfolios/idpay.vercel.app.png",
+			address: "https://idpay.vercel.app",
+			githubAddress: "https://github.com/babakfp/idpay",
+		},
+		{
+			title: "FarsGamer (built for a customer)",
+			poster: "/img/frontend-portfolios/farsgamer.com.png",
+			address: "https://farsgamer.com",
+		},
+		{
+			title: "TarVaPood (built for a customer)",
+			poster: "/img/frontend-portfolios/tarvapood.com.png",
+			address: "https://tarvapood.com",
+		},
+	]
 </script>
 
 <div class="max-w-prose mx-auto">
@@ -115,7 +141,31 @@
 			<ButtonLabel type="external" />
 		</a>
 	</div>
+</div>
 
+<ul class="mt-12 grid gap-8 sm:grid-cols-2 sm:gap-6 lg:gap-y-8">
+	{#each frontendPortfolios as portfolio}
+		<li class="group relative">
+			<img class="rounded duration-150 group-hover:rotate-2" src={portfolio.poster} alt />
+			<div class="mt-4 flex items-center gap-4 justify-between">
+				<h6 class="font-mono text-sm">{portfolio.title}</h6>
+				{#if portfolio.githubAddress}
+					<a
+						class="btn px-2 | relative z-1 flex"
+						href={portfolio.githubAddress}
+						target="_blank"
+						rel="noreferrer"
+					>
+						<IconGithub />
+					</a>
+				{/if}
+			</div>
+			<a class="absolute inset-0" href={portfolio.address} />
+		</li>
+	{/each}
+</ul>
+
+<div class="max-w-prose mx-auto">
 	<div
 		id="frontend-open-source"
 		class="mt-12 scroll-mt-[calc(theme(spacing.header-height)_+_theme(spacing.12))] flex items-end justify-between gap-4"
