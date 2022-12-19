@@ -13,7 +13,7 @@
 			title: "WP Administration Style",
 			description: "Improves UI design and user experience of the Wordpress administration panel.",
 			homepage: "https://wordpress.org/plugins/wp-administration-style",
-			thumb: "https://ps.w.org/wp-administration-style/assets/icon-256x256.png",
+			thumb: "/img/wp.org-portfolios/wp-administration-style.png",
 			activeInstalls: "2,000+",
 			rating: 5,
 			reviewsCount: 12,
@@ -23,7 +23,7 @@
 			description:
 				"Adds the functionality to easily use a Persian font in the Elementor Page Builder plugin.",
 			homepage: "https://wordpress.org/plugins/farsi-font-for-elementor/",
-			thumb: "https://ps.w.org/farsi-font-for-elementor/assets/icon-256x256.png",
+			thumb: "/img/wp.org-portfolios/farsi-font-for-elementor.png",
 			activeInstalls: "2,000+",
 			rating: null,
 			reviewsCount: null,
