@@ -61,24 +61,24 @@
 
 	const frontendPortfolios = [
 		{
-			title: "FarsGamer (open-source)",
+			title: "FarsGamer - Online game store (open-source)",
 			poster: "/img/frontend-portfolios/farsgamer.vercel.app.png",
 			address: "https://farsgamer.vercel.app",
 			githubAddress: "http://github.com/babakfp/farsgamer",
 		},
 		{
-			title: "IDPay (open-source)",
+			title: "IDPay - Online payment (open-source)",
 			poster: "/img/frontend-portfolios/idpay.vercel.app.png",
 			address: "https://idpay.vercel.app",
 			githubAddress: "https://github.com/babakfp/idpay",
 		},
 		{
-			title: "FarsGamer (built for a customer)",
+			title: "FarsGamer - Online game store (built for a client)",
 			poster: "/img/frontend-portfolios/farsgamer.com.png",
 			address: "https://farsgamer.com",
 		},
 		{
-			title: "TarVaPood (built for a customer)",
+			title: "TarVaPood - Online carpet store (built for a client)",
 			poster: "/img/frontend-portfolios/tarvapood.com.png",
 			address: "https://tarvapood.com",
 		},
