@@ -107,7 +107,7 @@
 			use:copy={"babak.bxf@gmail.com"}
 			on:click={() => toast.success("Copied to Clipboard!", { position: "bottom-right" })}
 		>
-			<span>Email</span>
+			<span>Email me</span>
 		</button>
 
 		<a class="group | btn-link" href="https://t.me/babakfp" target="_blank" rel="noreferrer">
