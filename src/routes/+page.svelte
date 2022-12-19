@@ -22,7 +22,7 @@
 			title: "Farsi Font for Elementor",
 			description:
 				"Adds the functionality to easily use a Persian font in the Elementor Page Builder plugin.",
-			homepage: "https://wordpress.org/plugins/farsi-font-for-elementor/",
+			homepage: "https://wordpress.org/plugins/farsi-font-for-elementor",
 			thumb: "/img/wp.org-portfolios/farsi-font-for-elementor.png",
 			activeInstalls: "2,000+",
 			rating: null,
