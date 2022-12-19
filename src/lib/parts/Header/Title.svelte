@@ -27,7 +27,7 @@
 
 	{#key title}
 		<div
-			class="absolute -mb-1"
+			class="absolute -mb-1 xl:mb-0"
 			in:fly={{ y: 32, duration: 300 }}
 			out:fly={{ y: -32, duration: 300 }}
 		>
