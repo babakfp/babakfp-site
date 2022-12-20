@@ -8,7 +8,7 @@
 	import BackgroundBackdrop from "$comps/BackgroundBackdrop.svelte"
 	import FloatingBackToTopButton from "$comps/FloatingBackToTopButton.svelte"
 
-	// app main styles
+	// Main styles
 	import "$styles/app.postcss"
 </script>
 
