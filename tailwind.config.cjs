@@ -1,6 +1,7 @@
 const colors = require("tailwindcss/colors")
 const defaultTheme = require("tailwindcss/defaultTheme")
 const tailwindcssAddons = require("tailwindcss-addons")
+const { default: flattenColorPalette } = require("tailwindcss/lib/util/flattenColorPalette")
 
 removeDeprecatedColors(colors)
 
@@ -83,19 +84,6 @@ module.exports = {
 			)
 		},
 	],
-}
-
-function flattenColorPalette(colors) {
-	return Object.assign(
-		{},
-		...Object.entries(colors ?? {}).flatMap(([color, values]) =>
-			typeof values == "object"
-				? Object.entries(flattenColorPalette(values)).map(([number, hex]) => ({
-						[color + (number === "DEFAULT" ? "" : `-${number}`)]: hex,
-				  }))
-				: [{ [`${color}`]: values }]
-		)
-	)
 }
 
 function removeDeprecatedColors(colors) {
