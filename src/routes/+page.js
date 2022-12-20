@@ -2,7 +2,7 @@ import { error } from "@sveltejs/kit"
 
 export async function load({ fetch }) {
 	try {
-		const githubRepositories = await Promise.all([
+		const repos = await Promise.all([
 			fetch("https://api.github.com/repos/babakfp/svelte-outclick").then(res => res.json()),
 			fetch("https://api.github.com/repos/babakfp/tailwindcss-addons").then(res => res.json()),
 		])
@@ -17,11 +17,11 @@ export async function load({ fetch }) {
 		])
 
 		// Add weeklyDownloads to package
-		githubRepositories.map(repo => {
+		repos.map(repo => {
 			repo.weeklyDownloads = packagesDownloads.filter(dl => dl.package === repo.name)[0]?.downloads
 		})
 
-		return { githubRepositories }
+		return { repos }
 	} catch (err) {
 		console.log(err)
 		throw error(500, "Unsuccessful fetching the data from GitHub!")
