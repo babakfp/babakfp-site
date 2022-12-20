@@ -1,5 +1,3 @@
-import { error } from "@sveltejs/kit"
-
 export async function load({ fetch }) {
 	try {
 		const repos = await Promise.all([
@@ -22,8 +20,7 @@ export async function load({ fetch }) {
 		})
 
 		return { repos }
-	} catch (err) {
-		console.log(err)
-		throw error(500, "Unsuccessful fetching the data from GitHub!")
+	} catch (_) {
+		console.log("Unsuccessful fetching the data from GitHub and NPM!")
 	}
 }

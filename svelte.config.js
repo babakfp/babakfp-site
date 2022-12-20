@@ -27,6 +27,7 @@ export default {
 			$utils: "src/lib/utils",
 			$stores: "src/lib/stores",
 			$styles: "src/lib/styles",
+			$db: "src/lib/db",
 		},
 	},
 	preprocess: [
