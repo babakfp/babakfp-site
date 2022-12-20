@@ -2,8 +2,10 @@ const colors = require("tailwindcss/colors")
 const defaultTheme = require("tailwindcss/defaultTheme")
 const tailwindcssAddons = require("tailwindcss-addons")
 
+removeDeprecatedColors(colors)
+
 module.exports = {
-	content: ["./src/**/*.{html,js,svelte,ts,md}"],
+	content: ["./src/**/*.{html,svelte,md}"],
 	presets: [tailwindcssAddons()],
 	theme: {
 		extend: {
@@ -94,4 +96,13 @@ function flattenColorPalette(colors) {
 				: [{ [`${color}`]: values }]
 		)
 	)
+}
+
+function removeDeprecatedColors(colors) {
+	// Removing deprecated colors
+	delete colors.lightBlue
+	delete colors.warmGray
+	delete colors.trueGray
+	delete colors.coolGray
+	delete colors.blueGray
 }
