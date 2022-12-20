@@ -4,7 +4,7 @@ export const isMenuOpen = writable(false)
 
 export const menuItems = readable([
 	{
-		title: "Home",
+		title: "HOME",
 		href: "/",
 		svg: `
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -14,7 +14,7 @@ export const menuItems = readable([
 		`,
 	},
 	{
-		title: "Blog",
+		title: "BLOG",
 		href: "/blog",
 		svg: `
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -24,7 +24,7 @@ export const menuItems = readable([
 		`,
 	},
 	{
-		title: "Documentation",
+		title: "DOCS",
 		href: "/docs",
 		svg: `
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">

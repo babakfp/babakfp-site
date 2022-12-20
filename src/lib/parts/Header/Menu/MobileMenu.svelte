@@ -37,8 +37,7 @@
 					>
 						{@html item.svg}
 					</div>
-					<span class="uppercase font-mono | duration-150 group-hover:text-white">{item.title}</span
-					>
+					<span class="font-mono | duration-150 group-hover:text-white">{item.title}</span>
 				</a>
 			</li>
 		{/each}
