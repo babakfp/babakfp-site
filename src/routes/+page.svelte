@@ -172,13 +172,7 @@
 		<ul class="mt-4 grid gap-4">
 			{#each data.repos as repo}
 				<li>
-					<CardRepo
-						href={repo.html_url}
-						title={repo.name}
-						description={repo.description}
-						stars={repo.stargazers_count}
-						weeklyDownloads={repo.weeklyDownloads}
-					/>
+					<CardRepo {...repo} />
 				</li>
 			{/each}
 		</ul>
