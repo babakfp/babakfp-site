@@ -82,14 +82,6 @@ module.exports = {
 				{ values: flattenColorPalette(theme("backgroundColor")), type: "color" }
 			)
 		},
-		function ({ matchUtilities, theme }) {
-			matchUtilities(
-				{
-					"highlight-top": value => ({ "box-shadow": `inset 0 1px 0 0 ${value}` }),
-				},
-				{ values: flattenColorPalette(theme("backgroundColor")), type: "color" }
-			)
-		},
 	],
 }
 
