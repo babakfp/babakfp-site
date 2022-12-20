@@ -1,20 +1,10 @@
 <script>
 	import { page } from "$app/stores"
-	import { isSidebarOpen, sidebarScrollPosition } from "$stores/sidebar.js"
 
 	export let href
 	export let isExternal = false
-	let element
 
 	$: isCurrent = $page.url.pathname === href
-
-	$: if (isCurrent && element && $isSidebarOpen && !$sidebarScrollPosition) {
-		element.scrollIntoView({ block: "center" })
-	}
-
-	function onItemLink() {
-		sidebarScrollPosition.set(document.querySelector("#sidebar-wrapper")?.scrollTop || 0)
-	}
 </script>
 
 <a
@@ -26,8 +16,6 @@
 	{href}
 	target={isExternal ? "_blank" : null}
 	rel={isExternal ? "noreferrer" : null}
-	on:click={onItemLink}
-	bind:this={element}
 >
 	<slot />
 </a>

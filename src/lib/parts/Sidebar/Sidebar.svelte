@@ -2,7 +2,7 @@
 	import OutClick from "svelte-outclick"
 	import { browser } from "$app/environment"
 	import { navigating } from "$app/stores"
-	import { isSidebarOpen, sidebarScrollPosition } from "$stores/sidebar.js"
+	import { isSidebarOpen } from "$stores/sidebar.js"
 	import SidebarMenu from "./SidebarMenu.svelte"
 	import PopupBackdrop from "$comps/PopupBackdrop.svelte"
 
@@ -11,7 +11,6 @@
 	$: if (browser) {
 		if ($isSidebarOpen) {
 			document.body.classList.add("overflow-y-hidden")
-			document.querySelector("#sidebar-wrapper")?.scrollTo(0, $sidebarScrollPosition)
 		} else {
 			document.body.classList.remove("overflow-y-hidden")
 		}
