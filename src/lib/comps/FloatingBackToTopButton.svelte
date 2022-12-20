@@ -21,7 +21,7 @@
 />
 
 <a
-	class="z-30 | fixed bottom-0 right-4 translate-y-full | block py-2 px-4 | bg-gray-800 rounded highlight-top-white/5 | text-gray-400 text-sm | duration-300 | hover:bg-gray-700
+	class="z-30 | fixed bottom-0 right-4 translate-y-full | btn | duration-300
 	{windowScrollY >= windowHeight && isScrolledUp && '-translate-y-6'}"
 	href="#body"
 >
