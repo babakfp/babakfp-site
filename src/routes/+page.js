@@ -1,5 +1,4 @@
 import { error } from "@sveltejs/kit"
-const pinnedRepos = ["svelte-outclick", "tailwindcss-addons", "farsgamer"]
 
 export async function load({ fetch }) {
 	try {
