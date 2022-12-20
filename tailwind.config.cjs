@@ -74,7 +74,7 @@ module.exports = {
 				},
 			})
 		},
-		({ matchUtilities, theme }) => {
+		function ({ matchUtilities, theme }) {
 			matchUtilities(
 				{
 					highlight: value => ({ "box-shadow": `inset 0 0 0 1px ${value}` }),
@@ -82,7 +82,7 @@ module.exports = {
 				{ values: flattenColorPalette(theme("backgroundColor")), type: "color" }
 			)
 		},
-		({ matchUtilities, theme }) => {
+		function ({ matchUtilities, theme }) {
 			matchUtilities(
 				{
 					"highlight-top": value => ({ "box-shadow": `inset 0 1px 0 0 ${value}` }),
