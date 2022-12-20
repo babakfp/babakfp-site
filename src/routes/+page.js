@@ -1,3 +1,5 @@
+import { repos as reposBackup } from "$db/repos.js"
+
 export async function load({ fetch }) {
 	try {
 		const repos = await Promise.all([
@@ -19,8 +21,13 @@ export async function load({ fetch }) {
 			repo.weeklyDownloads = packagesDownloads.filter(dl => dl.package === repo.name)[0]?.downloads
 		})
 
+		if (repos[0].message) {
+			repos = reposBackup
+		}
+
 		return { repos }
 	} catch (_) {
 		console.log("Unsuccessful fetching the data from GitHub and NPM!")
+		return { repos: reposBackup }
 	}
 }

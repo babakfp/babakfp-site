@@ -7,7 +7,6 @@
 	import toast, { Toaster } from "svelte-french-toast"
 	import ButtonLabel from "$comps/ButtonLabel.svelte"
 	import IconGithub from "$icons/IconGithub.svelte"
-	import { repos } from "$db/repos.js"
 
 	export let data
 
@@ -171,7 +170,7 @@
 		</div>
 
 		<ul class="mt-4 grid gap-4">
-			{#each (data?.repos && data?.repos[0].title) || repos as repo}
+			{#each data.repos as repo}
 				<li>
 					<CardRepo
 						href={repo.html_url}
