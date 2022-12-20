@@ -1,13 +1,13 @@
 <script>
-	export let data
 	import PostCard from "$comps/PostCard.svelte"
+	export let data
 </script>
 
 <svelte:head>
 	<title>Blog</title>
 </svelte:head>
 
-<ul class="grid gap-4 | mt-8">
+<ul class="grid gap-4">
 	{#each data.posts as post}
 		<PostCard
 			title={post.metadata.title}
