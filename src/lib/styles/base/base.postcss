@@ -1,9 +1,7 @@
 @layer base
 {
 	::selection { @apply bg-primary/20 }
-	* { @apply drag-none;
-		-webkit-tap-highlight-color: transparent;
-	}
+	* { @apply drag-none tap-highlight-transparent }
 	html { @apply scroll-smooth }
 	body { @apply antialiased bg-gray-800 text-gray-300 overflow-x-hidden }
 	b, strong { @apply font-semibold }

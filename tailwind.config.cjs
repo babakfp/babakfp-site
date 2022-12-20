@@ -67,6 +67,13 @@ module.exports = {
 		},
 	},
 	plugins: [
+		function ({ addUtilities }) {
+			addUtilities({
+				".tap-highlight-transparent": {
+					"-webkit-tap-highlight-color": "transparent",
+				},
+			})
+		},
 		({ matchUtilities, theme }) => {
 			matchUtilities(
 				{
