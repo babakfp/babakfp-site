@@ -8,9 +8,10 @@
 	export let stars
 	export let downloads
 	export let version
+	export let isExternal = true
 </script>
 
-<Card href={url} isExternal={true}>
+<Card href={url} {isExternal}>
 	<h3 class="text-white text-lg font-semibold font-mono">
 		<IconRepo class="text-xl text-gray-400" />
 		{name}

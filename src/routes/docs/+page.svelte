@@ -1,8 +1,9 @@
 <script>
 	import { sidebarItems } from "$stores/sidebar.js"
 	import LayoutDefault from "$comps/LayoutDefault.svelte"
-	import Card from "$comps/Card.svelte"
+	import CardRepo from "$comps/CardRepo.svelte"
 	import IconRepo from "$icons/IconRepo.svelte"
+	export let data
 </script>
 
 <svelte:head>
@@ -11,14 +12,9 @@
 
 <LayoutDefault>
 	<ul class="grid gap-4">
-		{#each $sidebarItems as { rootUrl, name }}
+		{#each data.repos as repo}
 			<li>
-				<Card href={rootUrl} arrowCenter={true}>
-					<h2 class="text-white text-lg font-semibold font-mono">
-						<IconRepo class="text-xl text-gray-400" />
-						{name}
-					</h2>
-				</Card>
+				<CardRepo {...repo} url="/docs/{repo.name}" isExternal={false} />
 			</li>
 		{/each}
 	</ul>
