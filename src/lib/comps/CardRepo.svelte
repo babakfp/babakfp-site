@@ -22,14 +22,14 @@
 
 	{#if stars > 0 || downloads > 0 || version}
 		<div class="mt-2 flex flex-wrap gap-x-4 gap-y-2 text-gray-400 text-xs font-mono">
-			{#if stars > 0}
-				<span>{stars} Stars</span>
+			{#if version}
+				<span>Version {version}</span>
 			{/if}
 			{#if downloads > 0}
 				<span>{downloads} NPM downloads</span>
 			{/if}
-			{#if version}
-				<span>Version {version}</span>
+			{#if stars > 0}
+				<span>{stars} Stars</span>
 			{/if}
 		</div>
 	{/if}
