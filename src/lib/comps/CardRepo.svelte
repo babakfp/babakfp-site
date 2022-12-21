@@ -26,7 +26,7 @@
 				<span>{stars} Stars</span>
 			{/if}
 			{#if downloads > 0}
-				<span>{downloads} Weekly downloads</span>
+				<span>{downloads} NPM downloads</span>
 			{/if}
 			{#if version}
 				<span>Version {version}</span>
