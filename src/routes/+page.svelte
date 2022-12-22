@@ -61,6 +61,16 @@
 
 	const frontendPortfolios = [
 		{
+			title: "TarVaPood - Online carpet store (built for a client)",
+			poster: "/img/frontend-portfolios/tarvapood.com.png",
+			address: "https://tarvapood.com",
+		},
+		{
+			title: "FarsGamer - Online game store (built for a client)",
+			poster: "/img/frontend-portfolios/farsgamer.com.png",
+			address: "https://farsgamer.com",
+		},
+		{
 			title: "FarsGamer - Online game store (open-source)",
 			poster: "/img/frontend-portfolios/farsgamer.vercel.app.png",
 			address: "https://farsgamer.vercel.app",
@@ -71,16 +81,6 @@
 			poster: "/img/frontend-portfolios/idpay.vercel.app.png",
 			address: "https://idpay.vercel.app",
 			githubAddress: "https://github.com/babakfp/idpay",
-		},
-		{
-			title: "FarsGamer - Online game store (built for a client)",
-			poster: "/img/frontend-portfolios/farsgamer.com.png",
-			address: "https://farsgamer.com",
-		},
-		{
-			title: "TarVaPood - Online carpet store (built for a client)",
-			poster: "/img/frontend-portfolios/tarvapood.com.png",
-			address: "https://tarvapood.com",
 		},
 	]
 </script>
