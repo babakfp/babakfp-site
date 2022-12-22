@@ -54,7 +54,7 @@
 	]
 
 	const resumeUrl =
-		"https://drive.google.com/file/d/1YDzEOu554dNuKXVm2B0InG6ZhuTuXtKb/view?usp=share_link"
+		"https://drive.google.com/file/d/1k4rC0qdFElkehAX5GjRishLJPbAsOQM5/view?usp=sharing"
 	const githubReposUrl =
 		"https://github.com/babakfp?tab=repositories&q=&type=public&language=&sort=stargazers"
 	const dribbbleDesigns = "https://dribbble.com/babakfp"
