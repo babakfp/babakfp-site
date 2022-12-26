@@ -1,4 +1,5 @@
-import { packages } from "$db/packages.js"
+// We will use this backup data if the fetch fails
+import packages from "$db/packages.json" assert { type: "json" }
 
 const packageNames = ["svelte-outclick", "tailwindcss-addons"]
 
