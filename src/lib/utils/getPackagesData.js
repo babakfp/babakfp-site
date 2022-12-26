@@ -1,4 +1,4 @@
-import { repos as reposBackup } from "$db/repos.js"
+import { packages } from "$db/packages.js"
 
 const packageNames = ["svelte-outclick", "tailwindcss-addons"]
 
@@ -11,7 +11,7 @@ export const getPackagesData = async fetch => {
 		const data = []
 		for (let i = 0; i < packageNames.length; i++) {
 			data.push({
-				...(Object.keys(repos[i]).length > 0 ? repos[i] : reposBackup[i]),
+				...(Object.keys(repos[i]).length > 0 ? repos[i] : packages[i]),
 				...versions[i],
 				...downloads[i],
 			})
@@ -19,7 +19,7 @@ export const getPackagesData = async fetch => {
 
 		return { repos: data }
 	} catch (error) {
-		return { repos: reposBackup }
+		return { repos: packages }
 	}
 }
 

@@ -1,5 +1,5 @@
 // We will use this data if the fetch fails
-export const repos = [
+export const packages = [
 	{
 		name: "svelte-outclick",
 		url: "https://github.com/babakfp/svelte-outclick",
