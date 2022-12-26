@@ -70,12 +70,12 @@
 		{#each data.frontendPortfolios as portfolio}
 			<li class="group relative">
 				<img
-					class="aspect-[32/15] rounded duration-300 group-hover:rotate-2"
+					class="aspect-[32/15] rounded duration-300 group-hover:scale-95"
 					src={portfolio.poster}
 					alt
 				/>
 				<img
-					class="aspect-[32/15] absolute inset-0 -z-1 rounded duration-150 blur-sm hide scale-95 !opacity-80 group-hover:show group-hover:-rotate-2 group-hover:scale-100"
+					class="aspect-[32/15] absolute inset-0 -z-1 rounded duration-300 blur-sm hide scale-95 !opacity-75 group-hover:show group-hover:-rotate-3 group-hover:scale-105"
 					src={portfolio.poster}
 					alt
 					aria-hidden="true"
