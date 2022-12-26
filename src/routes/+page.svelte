@@ -10,79 +10,11 @@
 
 	export let data
 
-	const wordpressPlugins = [
-		{
-			title: "WP Administration Style",
-			description: "Improves UI design and user experience of the Wordpress administration panel.",
-			homepage: "https://wordpress.org/plugins/wp-administration-style",
-			thumb: "/img/wp.org-portfolios/wp-administration-style.png",
-			activeInstalls: "2,000+",
-			rating: 5,
-			reviewsCount: 12,
-		},
-		{
-			title: "Farsi Font for Elementor",
-			description:
-				"Adds the functionality to easily use a Persian font in the Elementor Page Builder plugin.",
-			homepage: "https://wordpress.org/plugins/farsi-font-for-elementor",
-			thumb: "/img/wp.org-portfolios/farsi-font-for-elementor.png",
-			activeInstalls: "2,000+",
-			rating: null,
-			reviewsCount: null,
-		},
-	]
-	const rtlThemeProducts = [
-		{
-			title: "Elementor Fullpage Scroll",
-			description:
-				"A Wordpress plugin to build fullpage scrollable sections with Elementor Page Builder.",
-			href: "https://www.rtl-theme.com/pixerul-wordpress-plugin",
-			thumb: "/img/rtl-theme-portfolios/elementor-fullpage-scroll.png",
-			sales: 124,
-			rating: 4.5,
-			reviewsCount: 15,
-		},
-		{
-			title: "Elementor Fullpage Accordion",
-			description: "A Wordpress plugin to build fullpage accordions with Elementor Page Builder.",
-			href: "https://www.rtl-theme.com/elementor-fullpage-accordion-wordpress-plugin",
-			thumb: "/img/rtl-theme-portfolios/elementor-fullpage-accordion.png",
-			sales: 7,
-			rating: null,
-			reviewsCount: 0,
-		},
-	]
-
 	const resumeUrl =
 		"https://drive.google.com/file/d/1DiGH4If-bb7MkIwaReqyTmY9dlUh6o8V/view?usp=sharing"
 	const githubReposUrl =
 		"https://github.com/babakfp?tab=repositories&q=&type=public&language=&sort=stargazers"
 	const dribbbleDesigns = "https://dribbble.com/babakfp"
-
-	const frontendPortfolios = [
-		{
-			title: "TarVaPood - Online carpet store (built for a client)",
-			poster: "/img/frontend-portfolios/tarvapood.com.png",
-			address: "https://tarvapood.com",
-		},
-		{
-			title: "FarsGamer - Online game store (built for a client)",
-			poster: "/img/frontend-portfolios/farsgamer.com.png",
-			address: "https://farsgamer.com",
-		},
-		{
-			title: "FarsGamer - Online game store (open-source)",
-			poster: "/img/frontend-portfolios/farsgamer.vercel.app.png",
-			address: "https://farsgamer.vercel.app",
-			githubAddress: "http://github.com/babakfp/farsgamer",
-		},
-		{
-			title: "IDPay - Online payment (open-source)",
-			poster: "/img/frontend-portfolios/idpay.vercel.app.png",
-			address: "https://idpay.vercel.app",
-			githubAddress: "https://github.com/babakfp/idpay",
-		},
-	]
 </script>
 
 <LayoutDefault>
@@ -128,7 +60,7 @@
 	</div>
 
 	<ul class="mt-12 grid gap-8 sm:grid-cols-2 sm:gap-6 lg:gap-y-8">
-		{#each frontendPortfolios as portfolio}
+		{#each data.frontendPortfolios as portfolio}
 			<li class="group relative">
 				<img
 					class="aspect-[32/15] rounded duration-300 group-hover:rotate-2"
@@ -187,7 +119,7 @@
 		</div>
 
 		<ul class="mt-4 grid gap-4">
-			{#each wordpressPlugins as plugin}
+			{#each data.wordpressRepositoryPlugins as plugin}
 				<li>
 					<CardWordpressPlugin {...plugin} />
 				</li>
@@ -204,7 +136,7 @@
 		</div>
 
 		<ul class="mt-4 grid gap-4">
-			{#each rtlThemeProducts as plugin}
+			{#each data.rtlThemePlugins as plugin}
 				<li>
 					<CardRtlTheme {...plugin} />
 				</li>
