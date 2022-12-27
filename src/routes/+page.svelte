@@ -68,9 +68,9 @@
 
 	<ul class="mt-12 grid gap-8 sm:grid-cols-2 sm:gap-6 lg:gap-y-8">
 		{#each data.frontendPortfolios as portfolio}
-			<li class="group relative">
+			<li class="block group relative">
 				<img
-					class="aspect-[32/15] rounded duration-300 group-hover:scale-95"
+					class="w-full aspect-[32/15] rounded duration-300 group-hover:scale-95"
 					src={portfolio.poster}
 					alt
 				/>
