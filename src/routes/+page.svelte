@@ -61,7 +61,7 @@
 						position: "bottom-right",
 					})}
 			>
-				<span>Email me</span>
+				Email me
 			</button>
 		</div>
 	</div>
