@@ -10,12 +10,6 @@
 	import IconGithub from "$icons/IconGithub.svelte"
 
 	export let data
-	const backup_PUBLIC_GOOGLE_DRIVE_RESUME_URL =
-		"https://drive.google.com/file/d/1x24kKryKqkjGWPwyRyttNQcQjelv5FKC/view?usp=sharing"
-
-	const githubRepositoriesUrl =
-		"https://github.com/babakfp?tab=repositories&q=&type=public&language=&sort=stargazers"
-	const DribbbleDesignsUrl = "https://dribbble.com/babakfp"
 </script>
 
 <LayoutDefault>
@@ -33,7 +27,7 @@
 		<div class="mt-4 flex flex-wrap items-center gap-4">
 			<a
 				class="group | btn-link"
-				href={env.PUBLIC_GOOGLE_DRIVE_RESUME_URL || backup_PUBLIC_GOOGLE_DRIVE_RESUME_URL}
+				href={env.PUBLIC_GOOGLE_DRIVE_RESUME_URL}
 				target="_blank"
 				rel="noreferrer"
 			>
@@ -41,12 +35,22 @@
 				<ButtonLabel type="external" />
 			</a>
 
-			<a class="group | btn-link" href={githubRepositoriesUrl} target="_blank" rel="noreferrer">
+			<a
+				class="group | btn-link"
+				href="https://github.com/babakfp?tab=repositories&q=&type=public&language=&sort=stargazers"
+				target="_blank"
+				rel="noreferrer"
+			>
 				<span>View Repos</span>
 				<ButtonLabel type="external" />
 			</a>
 
-			<a class="group | btn-link" href={DribbbleDesignsUrl} target="_blank" rel="noreferrer">
+			<a
+				class="group | btn-link"
+				href="https://dribbble.com/babakfp"
+				target="_blank"
+				rel="noreferrer"
+			>
 				<span>UI Designs</span>
 				<ButtonLabel type="external" />
 			</a>
