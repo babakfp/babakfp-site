@@ -43,4 +43,11 @@ export default {
 		}),
 	],
 	extensions: [".svelte", ".md"],
+	// Disable Svelte A11Y warnings in the console
+	onwarn: (warning, handler) => {
+		if (warning.code.startsWith("a11y-")) {
+			return
+		}
+		handler(warning)
+	},
 }
